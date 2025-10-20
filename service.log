@@ -1,0 +1,1022 @@
+2025-09-24 10:50:29,243 - Loading faiss with AVX2 support.
+2025-09-24 10:50:29,257 - Successfully loaded faiss with AVX2 support.
+2025-09-24 10:50:29,261 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 10:50:55,073 - Loading faiss with AVX2 support.
+2025-09-24 10:50:55,087 - Successfully loaded faiss with AVX2 support.
+2025-09-24 10:50:55,090 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 10:51:07,428 - Loading faiss with AVX2 support.
+2025-09-24 10:51:07,442 - Successfully loaded faiss with AVX2 support.
+2025-09-24 10:51:07,446 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 10:51:40,907 - Loading faiss with AVX2 support.
+2025-09-24 10:51:40,921 - Successfully loaded faiss with AVX2 support.
+2025-09-24 10:51:40,924 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 10:55:26,288 - Loading faiss with AVX2 support.
+2025-09-24 10:55:26,304 - Successfully loaded faiss with AVX2 support.
+2025-09-24 10:55:26,307 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 10:56:08,115 - Loading faiss with AVX2 support.
+2025-09-24 10:56:08,130 - Successfully loaded faiss with AVX2 support.
+2025-09-24 10:56:08,132 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 10:57:04,182 - Loading faiss with AVX2 support.
+2025-09-24 10:57:04,196 - Successfully loaded faiss with AVX2 support.
+2025-09-24 10:57:04,199 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 11:01:09,522 - Loading faiss with AVX2 support.
+2025-09-24 11:01:09,535 - Successfully loaded faiss with AVX2 support.
+2025-09-24 11:01:09,538 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 11:01:18,145 - Loading faiss with AVX2 support.
+2025-09-24 11:01:18,158 - Successfully loaded faiss with AVX2 support.
+2025-09-24 11:01:18,161 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 11:01:46,156 - ==================================================
+2025-09-24 11:01:46,156 - 問題：國道一號后里有施工嗎
+2025-09-24 11:01:46,156 - IP：127.0.0.1
+2025-09-24 11:01:46,156 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 11:01:50,439 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 11:07:48,025 - Loading faiss with AVX2 support.
+2025-09-24 11:07:48,038 - Successfully loaded faiss with AVX2 support.
+2025-09-24 11:07:48,041 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 11:08:44,291 - Loading faiss with AVX2 support.
+2025-09-24 11:08:44,305 - Successfully loaded faiss with AVX2 support.
+2025-09-24 11:08:44,308 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 11:08:52,727 - ==================================================
+2025-09-24 11:08:52,727 - 問題：國道一號后里有施工嗎
+2025-09-24 11:08:52,727 - IP：127.0.0.1
+2025-09-24 11:08:52,727 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 11:10:19,737 - ==================================================
+2025-09-24 11:10:19,738 - 問題：國道一號林口有施工嗎
+2025-09-24 11:10:19,738 - IP：127.0.0.1
+2025-09-24 11:10:19,738 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 11:15:30,566 - Loading faiss with AVX2 support.
+2025-09-24 11:15:30,581 - Successfully loaded faiss with AVX2 support.
+2025-09-24 11:15:30,583 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 11:15:45,195 - Loading faiss with AVX2 support.
+2025-09-24 11:15:45,208 - Successfully loaded faiss with AVX2 support.
+2025-09-24 11:15:45,210 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 11:19:29,703 - ==================================================
+2025-09-24 11:19:29,703 - 問題：國道一號后里有施工嗎
+2025-09-24 11:19:29,703 - IP：127.0.0.1
+2025-09-24 11:19:29,703 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 11:19:42,472 - ==================================================
+2025-09-24 11:19:42,472 - 問題：國道三號北上 中壢交流道現在有沒有出口壅塞
+2025-09-24 11:19:42,472 - IP：127.0.0.1
+2025-09-24 11:19:42,472 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 11:19:42,504 - [incidents] invalid literal for int() with base 10: 'N1H'
+2025-09-24 11:19:44,060 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-24 11:19:45,392 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-24 11:19:47,346 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-24 11:19:51,422 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 11:20:00,071 - ==================================================
+2025-09-24 11:20:00,072 - 問題：桃園一帶交流道壅不壅塞
+2025-09-24 11:20:00,072 - IP：127.0.0.1
+2025-09-24 11:20:00,072 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 11:20:00,091 - [incidents] invalid literal for int() with base 10: 'N1H'
+2025-09-24 11:20:00,893 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-24 11:20:08,364 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-24 11:20:09,440 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-24 11:20:13,541 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 11:42:17,686 - Loading faiss with AVX2 support.
+2025-09-24 11:42:17,702 - Successfully loaded faiss with AVX2 support.
+2025-09-24 11:42:17,705 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 11:42:35,121 - Loading faiss with AVX2 support.
+2025-09-24 11:42:35,136 - Successfully loaded faiss with AVX2 support.
+2025-09-24 11:42:35,139 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 11:43:19,690 - Loading faiss with AVX2 support.
+2025-09-24 11:43:19,703 - Successfully loaded faiss with AVX2 support.
+2025-09-24 11:43:19,706 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 11:47:40,915 - Loading faiss with AVX2 support.
+2025-09-24 11:47:40,930 - Successfully loaded faiss with AVX2 support.
+2025-09-24 11:47:40,933 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 11:48:04,872 - ==================================================
+2025-09-24 11:48:04,872 - 問題：國道一號后里有施工嗎
+2025-09-24 11:48:04,872 - IP：127.0.0.1
+2025-09-24 11:48:04,873 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 11:48:09,750 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 11:48:30,645 - ==================================================
+2025-09-24 11:48:30,645 - 問題：施工 南下
+2025-09-24 11:48:30,645 - IP：127.0.0.1
+2025-09-24 11:48:30,645 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 11:48:34,759 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 11:48:55,577 - Loading faiss with AVX2 support.
+2025-09-24 11:48:55,592 - Successfully loaded faiss with AVX2 support.
+2025-09-24 11:48:55,595 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 11:49:09,516 - ==================================================
+2025-09-24 11:49:09,516 - 問題：國道一號后里有施工嗎
+2025-09-24 11:49:09,517 - IP：127.0.0.1
+2025-09-24 11:49:09,517 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 11:49:14,184 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 11:49:23,258 - ==================================================
+2025-09-24 11:49:23,258 - 問題：施工南下
+2025-09-24 11:49:23,258 - IP：127.0.0.1
+2025-09-24 11:49:23,258 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 11:49:27,323 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 13:41:06,568 - Loading faiss with AVX2 support.
+2025-09-24 13:41:07,043 - Successfully loaded faiss with AVX2 support.
+2025-09-24 13:41:07,046 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 13:41:15,651 - ==================================================
+2025-09-24 13:41:15,651 - 問題：國道一號后里有施工嗎
+2025-09-24 13:41:15,651 - IP：127.0.0.1
+2025-09-24 13:41:15,652 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 13:41:20,351 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 13:41:48,657 - Loading faiss with AVX2 support.
+2025-09-24 13:41:48,671 - Successfully loaded faiss with AVX2 support.
+2025-09-24 13:41:48,674 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 13:41:55,905 - ==================================================
+2025-09-24 13:41:55,905 - 問題：國道一號后里有施工嗎
+2025-09-24 13:41:55,905 - IP：127.0.0.1
+2025-09-24 13:41:55,905 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 13:42:24,625 - Loading faiss with AVX2 support.
+2025-09-24 13:42:24,641 - Successfully loaded faiss with AVX2 support.
+2025-09-24 13:42:24,644 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 13:42:33,043 - ==================================================
+2025-09-24 13:42:33,043 - 問題：國道一號后里有施工嗎
+2025-09-24 13:42:33,043 - IP：127.0.0.1
+2025-09-24 13:42:33,043 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 13:42:44,022 - Loading faiss with AVX2 support.
+2025-09-24 13:42:44,038 - Successfully loaded faiss with AVX2 support.
+2025-09-24 13:42:44,042 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 13:42:49,526 - ==================================================
+2025-09-24 13:42:49,526 - 問題：國道一號后里有施工嗎
+2025-09-24 13:42:49,526 - IP：127.0.0.1
+2025-09-24 13:42:49,526 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 13:55:53,283 - Loading faiss with AVX2 support.
+2025-09-24 13:55:53,297 - Successfully loaded faiss with AVX2 support.
+2025-09-24 13:55:53,301 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 13:56:08,588 - Loading faiss with AVX2 support.
+2025-09-24 13:56:08,602 - Successfully loaded faiss with AVX2 support.
+2025-09-24 13:56:08,605 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 13:56:34,372 - Loading faiss with AVX2 support.
+2025-09-24 13:56:34,386 - Successfully loaded faiss with AVX2 support.
+2025-09-24 13:56:34,389 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 13:56:56,950 - Loading faiss with AVX2 support.
+2025-09-24 13:56:56,965 - Successfully loaded faiss with AVX2 support.
+2025-09-24 13:56:56,968 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 13:58:04,404 - Loading faiss with AVX2 support.
+2025-09-24 13:58:04,420 - Successfully loaded faiss with AVX2 support.
+2025-09-24 13:58:04,424 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 14:00:56,349 - Loading faiss with AVX2 support.
+2025-09-24 14:00:56,362 - Successfully loaded faiss with AVX2 support.
+2025-09-24 14:00:56,365 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 14:20:09,968 - ==================================================
+2025-09-24 14:20:09,968 - 問題：國道一號北上 內壢到林口 目前有事故或異常嗎？
+2025-09-24 14:20:09,968 - IP：127.0.0.1
+2025-09-24 14:20:09,968 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 14:20:10,010 - [incidents] invalid literal for int() with base 10: 'N1H'
+2025-09-24 14:20:17,860 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 14:20:40,705 - ==================================================
+2025-09-24 14:20:40,705 - 問題：國道一號后里一帶現在有沒有施工管制？
+2025-09-24 14:20:40,705 - IP：127.0.0.1
+2025-09-24 14:20:40,705 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 14:20:44,858 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 14:20:46,657 - ==================================================
+2025-09-24 14:20:46,658 - 問題：國道三號北上 中壢交流道現在出口壅不壅塞？
+2025-09-24 14:20:46,658 - IP：127.0.0.1
+2025-09-24 14:20:46,658 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 14:20:46,678 - [incidents] invalid literal for int() with base 10: 'N1H'
+2025-09-24 14:20:47,573 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-24 14:20:47,876 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-24 14:20:49,213 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-24 14:20:53,326 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 14:20:54,718 - ==================================================
+2025-09-24 14:20:54,718 - 問題：從桃園交流道到內壢交流道，現在旅行時間多少？有沒有建議替代道路？
+2025-09-24 14:20:54,719 - IP：127.0.0.1
+2025-09-24 14:20:54,719 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 14:20:54,739 - [incidents] invalid literal for int() with base 10: 'N1H'
+2025-09-24 14:21:01,573 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 14:21:03,522 - ==================================================
+2025-09-24 14:21:03,522 - 問題：今天尖峰國道一號南下 桃園—內壢 路肩有開放嗎？時段是幾點到幾點？
+2025-09-24 14:21:03,522 - IP：127.0.0.1
+2025-09-24 14:21:03,523 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 14:21:07,564 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 14:21:15,537 - ==================================================
+2025-09-24 14:21:15,538 - 問題：西湖服務區現在小客車位還有多少？
+2025-09-24 14:21:15,538 - IP：127.0.0.1
+2025-09-24 14:21:15,538 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 14:21:16,414 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-24 14:21:16,933 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-24 14:21:18,830 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-24 14:21:22,927 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 14:21:24,860 - ==================================================
+2025-09-24 14:21:24,861 - 問題：國道五號南港端到雪隧口這一帶現在的天氣如何？
+2025-09-24 14:21:24,861 - IP：127.0.0.1
+2025-09-24 14:21:24,861 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 14:21:28,936 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 14:21:32,067 - ==================================================
+2025-09-24 14:21:32,067 - 問題：台61線中部海線南下 鹿港到芳苑 目前平均速率多少？
+2025-09-24 14:21:32,067 - IP：127.0.0.1
+2025-09-24 14:21:32,067 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 14:21:39,260 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 14:48:45,775 - Loading faiss with AVX2 support.
+2025-09-24 14:48:45,789 - Successfully loaded faiss with AVX2 support.
+2025-09-24 14:48:45,794 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 14:48:54,533 - Loading faiss with AVX2 support.
+2025-09-24 14:48:54,548 - Successfully loaded faiss with AVX2 support.
+2025-09-24 14:48:54,552 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 14:49:37,903 - Loading faiss with AVX2 support.
+2025-09-24 14:49:37,916 - Successfully loaded faiss with AVX2 support.
+2025-09-24 14:49:37,920 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 15:11:09,164 - ==================================================
+2025-09-24 15:11:09,164 - 問題：台74線 西行 太平到文心路 一帶是否有事故？
+2025-09-24 15:11:09,164 - IP：127.0.0.1
+2025-09-24 15:11:09,164 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 15:11:13,315 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 15:11:20,513 - ==================================================
+2025-09-24 15:11:20,513 - 問題：台61線 南下 鹿港到芳苑 是否有道路施工？
+2025-09-24 15:11:20,513 - IP：127.0.0.1
+2025-09-24 15:11:20,513 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 15:11:20,548 - [incidents] invalid literal for int() with base 10: 'N1K'
+2025-09-24 15:11:32,763 - ==================================================
+2025-09-24 15:11:32,763 - 問題：國道五號南下 石碇交流道 匝道壅塞情況如何？
+2025-09-24 15:11:32,763 - IP：127.0.0.1
+2025-09-24 15:11:32,763 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 15:11:32,780 - [incidents] invalid literal for int() with base 10: 'N1K'
+2025-09-24 15:11:33,824 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-24 15:11:34,373 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-24 15:11:36,382 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-24 15:11:40,476 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 15:20:46,852 - Loading faiss with AVX2 support.
+2025-09-24 15:20:46,867 - Successfully loaded faiss with AVX2 support.
+2025-09-24 15:20:46,870 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 15:20:55,624 - Loading faiss with AVX2 support.
+2025-09-24 15:20:55,637 - Successfully loaded faiss with AVX2 support.
+2025-09-24 15:20:55,641 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 15:21:23,954 - ==================================================
+2025-09-24 15:21:23,954 - 問題：西湖服務區現在小客車位還有多少？
+2025-09-24 15:21:23,954 - IP：127.0.0.1
+2025-09-24 15:21:23,954 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 15:21:28,112 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 15:26:17,857 - ==================================================
+2025-09-24 15:26:17,857 - 問題：國道一號北上 內壢到林口 目前有事故或其他異常嗎？
+2025-09-24 15:26:17,857 - IP：127.0.0.1
+2025-09-24 15:26:17,857 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 15:26:17,913 - [incidents] invalid literal for int() with base 10: 'N3A'
+2025-09-24 15:26:21,968 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 15:26:26,871 - ==================================================
+2025-09-24 15:26:26,871 - 問題：國1北 內壢—林口 事故？
+2025-09-24 15:26:26,871 - IP：127.0.0.1
+2025-09-24 15:26:26,871 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 15:26:26,891 - [incidents] invalid literal for int() with base 10: 'N3A'
+2025-09-24 15:26:30,975 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 15:26:36,658 - ==================================================
+2025-09-24 15:26:36,659 - 問題：國道三號南下 中和到土城 今晚是否有夜間施工或車道封閉？
+2025-09-24 15:26:36,659 - IP：127.0.0.1
+2025-09-24 15:26:36,659 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 15:26:40,760 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 15:26:43,468 - ==================================================
+2025-09-24 15:26:43,469 - 問題：國道一號北上 中壢交流道出口 現在是否壅塞回堵？
+2025-09-24 15:26:43,469 - IP：127.0.0.1
+2025-09-24 15:26:43,469 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 15:26:43,490 - [incidents] invalid literal for int() with base 10: 'N3A'
+2025-09-24 15:26:47,562 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 15:26:50,095 - ==================================================
+2025-09-24 15:26:50,095 - 問題：從桃園交流道到內壢交流道，目前原線旅行時間多少？有建議的替代道路嗎？
+2025-09-24 15:26:50,095 - IP：127.0.0.1
+2025-09-24 15:26:50,095 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 15:26:50,114 - [incidents] invalid literal for int() with base 10: 'N3A'
+2025-09-24 15:26:54,175 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 15:26:56,676 - ==================================================
+2025-09-24 15:26:56,677 - 問題：今天尖峰時段 國道一號南下 桃園—內壢 路肩是否開放？開放時段幾點到幾點？
+2025-09-24 15:26:56,677 - IP：127.0.0.1
+2025-09-24 15:26:56,677 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 15:26:56,733 - [incidents] invalid literal for int() with base 10: 'N1K'
+2025-09-24 15:27:00,773 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 15:27:03,468 - ==================================================
+2025-09-24 15:27:03,468 - 問題：西湖服務區目前小客車可用車位還有多少？可否同時列出大客與電動車位？
+2025-09-24 15:27:03,468 - IP：127.0.0.1
+2025-09-24 15:27:03,468 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 15:27:07,780 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 15:27:09,084 - ==================================================
+2025-09-24 15:27:09,084 - 問題：台61線中部海線南下 鹿港到芳苑 目前平均速率與壅塞等級是多少？
+2025-09-24 15:27:09,084 - IP：127.0.0.1
+2025-09-24 15:27:09,084 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 15:27:13,928 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 15:51:05,513 - Loading faiss with AVX2 support.
+2025-09-24 15:51:05,527 - Successfully loaded faiss with AVX2 support.
+2025-09-24 15:51:05,531 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 15:53:02,354 - Loading faiss with AVX2 support.
+2025-09-24 15:53:02,369 - Successfully loaded faiss with AVX2 support.
+2025-09-24 15:53:02,373 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 15:53:50,881 - Loading faiss with AVX2 support.
+2025-09-24 15:53:50,895 - Successfully loaded faiss with AVX2 support.
+2025-09-24 15:53:50,898 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 15:54:08,347 - Loading faiss with AVX2 support.
+2025-09-24 15:54:08,362 - Successfully loaded faiss with AVX2 support.
+2025-09-24 15:54:08,365 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 15:54:24,107 - Loading faiss with AVX2 support.
+2025-09-24 15:54:24,120 - Successfully loaded faiss with AVX2 support.
+2025-09-24 15:54:24,123 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 15:54:36,484 - Loading faiss with AVX2 support.
+2025-09-24 15:54:36,499 - Successfully loaded faiss with AVX2 support.
+2025-09-24 15:54:36,502 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 15:54:47,590 - Loading faiss with AVX2 support.
+2025-09-24 15:54:47,603 - Successfully loaded faiss with AVX2 support.
+2025-09-24 15:54:47,606 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 15:54:57,567 - Loading faiss with AVX2 support.
+2025-09-24 15:54:57,580 - Successfully loaded faiss with AVX2 support.
+2025-09-24 15:54:57,584 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 15:55:30,830 - Loading faiss with AVX2 support.
+2025-09-24 15:55:30,845 - Successfully loaded faiss with AVX2 support.
+2025-09-24 15:55:30,849 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 15:56:20,920 - ==================================================
+2025-09-24 15:56:20,920 - 問題：國道一號北上 內壢到林口 目前有事故或其他異常嗎？
+2025-09-24 15:56:20,920 - IP：127.0.0.1
+2025-09-24 15:56:20,921 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 15:56:20,958 - [incidents] invalid literal for int() with base 10: 'N3A'
+2025-09-24 15:56:25,047 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 15:57:37,206 - ==================================================
+2025-09-24 15:57:37,206 - 問題：國道三號南下 中和到土城 今晚是否有夜間施工或車道封閉？
+2025-09-24 15:57:37,206 - IP：127.0.0.1
+2025-09-24 15:57:37,206 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 15:57:41,284 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 15:57:43,757 - ==================================================
+2025-09-24 15:57:43,757 - 問題：國道一號北上 中壢交流道出口 現在是否壅塞回堵？
+2025-09-24 15:57:43,757 - IP：127.0.0.1
+2025-09-24 15:57:43,757 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 15:57:43,808 - [incidents] invalid literal for int() with base 10: 'N3A'
+2025-09-24 15:57:47,871 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 15:57:50,057 - ==================================================
+2025-09-24 15:57:50,057 - 問題：從桃園交流道到內壢交流道，目前原線旅行時間多少？有建議的替代道路嗎？
+2025-09-24 15:57:50,057 - IP：127.0.0.1
+2025-09-24 15:57:50,057 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 15:57:50,095 - [incidents] invalid literal for int() with base 10: 'N3A'
+2025-09-24 15:57:54,173 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 15:58:00,798 - ==================================================
+2025-09-24 15:58:00,798 - 問題：今天尖峰時段 國道一號南下 桃園—內壢 路肩是否開放？開放時段幾點到幾點？
+2025-09-24 15:58:00,798 - IP：127.0.0.1
+2025-09-24 15:58:00,798 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 15:58:00,830 - [incidents] invalid literal for int() with base 10: 'N1K'
+2025-09-24 15:58:04,948 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 15:58:08,495 - ==================================================
+2025-09-24 15:58:08,495 - 問題：西湖服務區目前小客車可用車位還有多少？可否同時列出大客與電動車位？
+2025-09-24 15:58:08,495 - IP：127.0.0.1
+2025-09-24 15:58:08,495 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 15:58:14,663 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 15:58:17,558 - ==================================================
+2025-09-24 15:58:17,558 - 問題：台61線中部海線南下 鹿港到芳苑 目前平均速率與壅塞等級是多少？
+2025-09-24 15:58:17,558 - IP：127.0.0.1
+2025-09-24 15:58:17,558 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 15:58:22,244 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 16:08:34,854 - Loading faiss with AVX2 support.
+2025-09-24 16:08:34,867 - Successfully loaded faiss with AVX2 support.
+2025-09-24 16:08:34,870 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-24 16:08:53,549 - ==================================================
+2025-09-24 16:08:53,549 - 問題：國道一號北上 內壢到林口 目前有事故或其他異常嗎？
+2025-09-24 16:08:53,549 - IP：127.0.0.1
+2025-09-24 16:08:53,549 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 16:08:57,638 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 16:09:08,675 - ==================================================
+2025-09-24 16:09:08,675 - 問題：國道三號南下 中和到土城 今晚是否有夜間施工或車道封閉？
+2025-09-24 16:09:08,675 - IP：127.0.0.1
+2025-09-24 16:09:08,675 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 16:09:12,759 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 16:09:22,745 - ==================================================
+2025-09-24 16:09:22,745 - 問題：國道一號北上 中壢交流道出口 現在是否壅塞回堵？
+2025-09-24 16:09:22,745 - IP：127.0.0.1
+2025-09-24 16:09:22,745 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 16:09:26,897 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 16:09:32,352 - ==================================================
+2025-09-24 16:09:32,352 - 問題：從桃園交流道到內壢交流道，目前原線旅行時間多少？有建議的替代道路嗎？
+2025-09-24 16:09:32,352 - IP：127.0.0.1
+2025-09-24 16:09:32,352 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 16:09:36,467 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 16:09:39,076 - ==================================================
+2025-09-24 16:09:39,077 - 問題：今天尖峰時段 國道一號南下 桃園—內壢 路肩是否開放？開放時段幾點到幾點？
+2025-09-24 16:09:39,077 - IP：127.0.0.1
+2025-09-24 16:09:39,077 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 16:09:43,175 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 16:09:46,766 - ==================================================
+2025-09-24 16:09:46,767 - 問題：西湖服務區 小客車位剩幾格？
+2025-09-24 16:09:46,767 - IP：127.0.0.1
+2025-09-24 16:09:46,767 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 16:09:50,921 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-24 16:09:53,883 - ==================================================
+2025-09-24 16:09:53,883 - 問題：台61線中部海線南下 鹿港到芳苑 目前平均速率與壅塞等級是多少？
+2025-09-24 16:09:53,883 - IP：127.0.0.1
+2025-09-24 16:09:53,883 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-24 16:09:58,531 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-25 09:45:38,381 - Loading faiss with AVX2 support.
+2025-09-25 09:45:38,886 - Successfully loaded faiss with AVX2 support.
+2025-09-25 09:45:38,927 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 09:45:41,267 - Loading faiss with AVX2 support.
+2025-09-25 09:45:41,281 - Successfully loaded faiss with AVX2 support.
+2025-09-25 09:45:41,286 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 09:45:48,600 - Loading faiss with AVX2 support.
+2025-09-25 09:45:48,613 - Successfully loaded faiss with AVX2 support.
+2025-09-25 09:45:48,617 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 09:46:41,773 - Loading faiss with AVX2 support.
+2025-09-25 09:46:41,789 - Successfully loaded faiss with AVX2 support.
+2025-09-25 09:46:41,793 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 09:53:34,109 - Loading faiss with AVX2 support.
+2025-09-25 09:53:34,122 - Successfully loaded faiss with AVX2 support.
+2025-09-25 09:53:34,126 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 09:53:45,057 - Loading faiss with AVX2 support.
+2025-09-25 09:53:45,070 - Successfully loaded faiss with AVX2 support.
+2025-09-25 09:53:45,073 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 09:53:52,361 - Loading faiss with AVX2 support.
+2025-09-25 09:53:52,375 - Successfully loaded faiss with AVX2 support.
+2025-09-25 09:53:52,379 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 09:53:58,111 - Loading faiss with AVX2 support.
+2025-09-25 09:53:58,125 - Successfully loaded faiss with AVX2 support.
+2025-09-25 09:53:58,129 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 09:54:11,104 - Loading faiss with AVX2 support.
+2025-09-25 09:54:11,117 - Successfully loaded faiss with AVX2 support.
+2025-09-25 09:54:11,121 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 09:54:15,337 - Loading faiss with AVX2 support.
+2025-09-25 09:54:15,351 - Successfully loaded faiss with AVX2 support.
+2025-09-25 09:54:15,354 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 09:54:26,403 - Loading faiss with AVX2 support.
+2025-09-25 09:54:26,418 - Successfully loaded faiss with AVX2 support.
+2025-09-25 09:54:26,422 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 09:54:31,402 - Loading faiss with AVX2 support.
+2025-09-25 09:54:31,416 - Successfully loaded faiss with AVX2 support.
+2025-09-25 09:54:31,419 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 09:54:42,189 - Loading faiss with AVX2 support.
+2025-09-25 09:54:42,202 - Successfully loaded faiss with AVX2 support.
+2025-09-25 09:54:42,205 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 09:54:48,648 - Loading faiss with AVX2 support.
+2025-09-25 09:54:48,664 - Successfully loaded faiss with AVX2 support.
+2025-09-25 09:54:48,668 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 09:54:59,511 - Loading faiss with AVX2 support.
+2025-09-25 09:54:59,524 - Successfully loaded faiss with AVX2 support.
+2025-09-25 09:54:59,528 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 09:55:01,825 - Loading faiss with AVX2 support.
+2025-09-25 09:55:01,839 - Successfully loaded faiss with AVX2 support.
+2025-09-25 09:55:01,842 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 09:55:04,084 - Loading faiss with AVX2 support.
+2025-09-25 09:55:04,098 - Successfully loaded faiss with AVX2 support.
+2025-09-25 09:55:04,101 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 09:55:13,433 - Loading faiss with AVX2 support.
+2025-09-25 09:55:13,448 - Successfully loaded faiss with AVX2 support.
+2025-09-25 09:55:13,451 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 09:55:47,549 - Loading faiss with AVX2 support.
+2025-09-25 09:55:47,563 - Successfully loaded faiss with AVX2 support.
+2025-09-25 09:55:47,567 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 09:56:16,681 - Loading faiss with AVX2 support.
+2025-09-25 09:56:16,696 - Successfully loaded faiss with AVX2 support.
+2025-09-25 09:56:16,699 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-25 14:51:58,862 - ==================================================
+2025-09-25 14:51:58,863 - 問題：國道一號南下 15K 到 16K 現在是不是有施工
+2025-09-25 14:51:58,863 - IP：127.0.0.1
+2025-09-25 14:51:58,863 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-25 14:52:03,303 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-25 14:52:53,313 - ==================================================
+2025-09-25 14:52:53,313 - 問題：我開在國道三號快官北上，有沒有遇到施工事件
+2025-09-25 14:52:53,313 - IP：127.0.0.1
+2025-09-25 14:52:53,313 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-25 14:52:57,436 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-25 14:55:24,285 - ==================================================
+2025-09-25 14:55:24,285 - 問題：1.	請問林口北向出口現在是不是塞住了
+2025-09-25 14:55:24,285 - IP：127.0.0.1
+2025-09-25 14:55:24,285 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-25 14:55:28,393 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-25 14:55:42,234 - ==================================================
+2025-09-25 14:55:42,234 - 問題：國一南下 91K 現在路肩開放嗎
+2025-09-25 14:55:42,234 - IP：127.0.0.1
+2025-09-25 14:55:42,234 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-25 14:55:46,317 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-25 14:56:16,241 - ==================================================
+2025-09-25 14:56:16,241 - 問題：關西服務區的小型車位目前剩幾個
+2025-09-25 14:56:16,241 - IP：127.0.0.1
+2025-09-25 14:56:16,241 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-25 14:56:20,418 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-30 11:04:29,230 - Loading faiss with AVX2 support.
+2025-09-30 11:04:29,933 - Successfully loaded faiss with AVX2 support.
+2025-09-30 11:04:29,979 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-30 11:05:41,618 - ==================================================
+2025-09-30 11:05:41,618 - 問題：國道四號台中路段有服務區嗎
+2025-09-30 11:05:41,618 - IP：127.0.0.1
+2025-09-30 11:05:41,618 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-30 11:05:45,794 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-30 11:06:22,489 - ==================================================
+2025-09-30 11:06:22,489 - 問題：西螺服務區停車位
+2025-09-30 11:06:22,489 - IP：127.0.0.1
+2025-09-30 11:06:22,489 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-30 11:06:28,252 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-30 11:11:07,809 - ==================================================
+2025-09-30 11:11:07,809 - 問題：台中市西屯區河南路二段262號到南港展覽館要多久
+2025-09-30 11:11:07,809 - IP：127.0.0.1
+2025-09-30 11:11:07,809 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-30 11:11:11,527 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-30 11:11:12,174 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-30 11:11:13,778 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-30 11:11:17,843 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-30 11:11:53,091 - ==================================================
+2025-09-30 11:11:53,091 - 問題：西螺休息站停車位
+2025-09-30 11:11:53,091 - IP：127.0.0.1
+2025-09-30 11:11:53,092 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-30 11:11:53,956 - [parking] no element found: line 1, column 0
+2025-09-30 11:11:58,062 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-30 11:12:25,830 - Loading faiss with AVX2 support.
+2025-09-30 11:12:25,843 - Successfully loaded faiss with AVX2 support.
+2025-09-30 11:12:25,847 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-30 11:12:28,497 - ==================================================
+2025-09-30 11:12:28,497 - 問題：西螺休息站停車位
+2025-09-30 11:12:28,497 - IP：127.0.0.1
+2025-09-30 11:12:28,497 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-30 11:12:34,293 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-30 11:13:08,284 - ==================================================
+2025-09-30 11:13:08,284 - 問題：西螺服務區小客車車位有多少
+2025-09-30 11:13:08,284 - IP：127.0.0.1
+2025-09-30 11:13:08,284 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-30 11:13:12,401 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-30 11:13:43,132 - ==================================================
+2025-09-30 11:13:43,132 - 問題：西螺服務區南站小客車車位有多少
+2025-09-30 11:13:43,132 - IP：127.0.0.1
+2025-09-30 11:13:43,132 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-30 11:13:47,300 - [❌] 寫入資料庫失敗：(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 無法連線，因為目標電腦拒絕連線。)")
+2025-09-30 16:02:44,667 - Loading faiss with AVX2 support.
+2025-09-30 16:02:45,323 - Successfully loaded faiss with AVX2 support.
+2025-09-30 16:02:45,368 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-30 16:11:35,883 - Loading faiss with AVX2 support.
+2025-09-30 16:11:35,898 - Successfully loaded faiss with AVX2 support.
+2025-09-30 16:11:35,901 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-30 16:16:50,236 - Loading faiss with AVX2 support.
+2025-09-30 16:16:50,250 - Successfully loaded faiss with AVX2 support.
+2025-09-30 16:16:50,254 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-30 17:13:13,111 - ==================================================
+2025-09-30 17:13:13,111 - 問題：國一北上 五股出口 目前狀況？
+2025-09-30 17:13:13,111 - IP：127.0.0.1
+2025-09-30 17:13:13,111 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-30 17:13:15,520 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-30 17:13:15,777 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-09-30 17:13:16,391 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-30 17:13:19,368 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-30 17:13:19,377 - [❌] 寫入資料庫失敗：label empty or too long
+2025-09-30 17:17:43,102 - Loading faiss with AVX2 support.
+2025-09-30 17:17:43,114 - Successfully loaded faiss with AVX2 support.
+2025-09-30 17:17:43,117 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-30 17:18:05,517 - Loading faiss with AVX2 support.
+2025-09-30 17:18:05,531 - Successfully loaded faiss with AVX2 support.
+2025-09-30 17:18:05,534 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-30 17:19:00,306 - Loading faiss with AVX2 support.
+2025-09-30 17:19:00,319 - Successfully loaded faiss with AVX2 support.
+2025-09-30 17:19:00,322 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-30 17:19:08,568 - Loading faiss with AVX2 support.
+2025-09-30 17:19:08,583 - Successfully loaded faiss with AVX2 support.
+2025-09-30 17:19:08,586 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-30 17:19:10,947 - Loading faiss with AVX2 support.
+2025-09-30 17:19:10,962 - Successfully loaded faiss with AVX2 support.
+2025-09-30 17:19:10,966 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-30 17:19:28,228 - Loading faiss with AVX2 support.
+2025-09-30 17:19:28,241 - Successfully loaded faiss with AVX2 support.
+2025-09-30 17:19:28,244 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-30 17:20:41,562 - Loading faiss with AVX2 support.
+2025-09-30 17:20:41,574 - Successfully loaded faiss with AVX2 support.
+2025-09-30 17:20:41,577 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-30 17:20:50,856 - Loading faiss with AVX2 support.
+2025-09-30 17:20:50,870 - Successfully loaded faiss with AVX2 support.
+2025-09-30 17:20:50,873 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-30 17:24:33,489 - Loading faiss with AVX2 support.
+2025-09-30 17:24:33,516 - Successfully loaded faiss with AVX2 support.
+2025-09-30 17:24:33,523 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-30 17:25:18,127 - Loading faiss with AVX2 support.
+2025-09-30 17:25:18,141 - Successfully loaded faiss with AVX2 support.
+2025-09-30 17:25:18,144 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-30 17:25:28,313 - Loading faiss with AVX2 support.
+2025-09-30 17:25:28,328 - Successfully loaded faiss with AVX2 support.
+2025-09-30 17:25:28,332 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-09-30 17:25:35,330 - ==================================================
+2025-09-30 17:25:35,330 - 問題：國一北上 五股出口 目前狀況？
+2025-09-30 17:25:35,330 - IP：127.0.0.1
+2025-09-30 17:25:35,330 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-09-30 17:25:36,531 - [❌] 寫入資料庫失敗：label empty or too long
+2025-09-30 17:25:40,555 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-01 13:03:43,448 - Loading faiss with AVX2 support.
+2025-10-01 13:03:43,997 - Successfully loaded faiss with AVX2 support.
+2025-10-01 13:03:44,052 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 09:45:57,836 - Loading faiss with AVX2 support.
+2025-10-03 09:45:58,446 - Successfully loaded faiss with AVX2 support.
+2025-10-03 09:45:58,492 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:20:37,553 - ==================================================
+2025-10-03 10:20:37,558 - 問題：請問哪些服務區有廁所、餐廳、加油站
+2025-10-03 10:20:37,558 - IP：127.0.0.1
+2025-10-03 10:20:37,558 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-10-03 10:20:38,768 - [❌] 寫入資料庫失敗：label empty or too long
+2025-10-03 10:20:44,435 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 10:33:48,799 - Loading faiss with AVX2 support.
+2025-10-03 10:33:48,813 - Loading faiss with AVX2 support.
+2025-10-03 10:33:48,814 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:33:48,818 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:33:48,826 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:33:48,829 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:34:30,295 - Loading faiss with AVX2 support.
+2025-10-03 10:34:30,304 - Loading faiss with AVX2 support.
+2025-10-03 10:34:30,309 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:34:30,313 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:34:30,318 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:34:30,322 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:35:11,521 - Loading faiss with AVX2 support.
+2025-10-03 10:35:11,532 - Loading faiss with AVX2 support.
+2025-10-03 10:35:11,535 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:35:11,538 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:35:11,545 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:35:11,548 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:36:05,299 - Loading faiss with AVX2 support.
+2025-10-03 10:36:05,311 - Loading faiss with AVX2 support.
+2025-10-03 10:36:05,313 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:36:05,317 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:36:05,325 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:36:05,328 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:36:11,288 - Loading faiss with AVX2 support.
+2025-10-03 10:36:11,289 - Loading faiss with AVX2 support.
+2025-10-03 10:36:11,302 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:36:11,302 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:36:11,305 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:36:11,305 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:36:35,700 - ==================================================
+2025-10-03 10:36:35,701 - 問題：請問關西服務區的設施
+2025-10-03 10:36:35,701 - IP：127.0.0.1
+2025-10-03 10:36:35,701 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-10-03 10:36:37,043 - [❌] 寫入資料庫失敗：label empty or too long
+2025-10-03 10:36:37,970 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 10:37:28,634 - ==================================================
+2025-10-03 10:37:28,634 - 問題：我在178公里處，請問最近的交流道?
+2025-10-03 10:37:28,634 - IP：127.0.0.1
+2025-10-03 10:37:28,634 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-10-03 10:37:30,051 - [❌] 寫入資料庫失敗：label empty or too long
+2025-10-03 10:37:31,291 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 10:37:43,414 - ==================================================
+2025-10-03 10:37:43,414 - 問題：國道3號，霧峰到南投路況
+2025-10-03 10:37:43,414 - IP：127.0.0.1
+2025-10-03 10:37:43,414 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-10-03 10:37:44,641 - [❌] 寫入資料庫失敗：label empty or too long
+2025-10-03 10:37:47,000 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 10:40:36,985 - Loading faiss with AVX2 support.
+2025-10-03 10:40:36,998 - Loading faiss with AVX2 support.
+2025-10-03 10:40:36,999 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:40:37,002 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:40:37,010 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:40:37,013 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:42:31,945 - Loading faiss with AVX2 support.
+2025-10-03 10:42:31,958 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:42:31,962 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:42:32,238 - Loading faiss with AVX2 support.
+2025-10-03 10:42:32,252 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:42:32,255 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:42:53,835 - Loading faiss with AVX2 support.
+2025-10-03 10:42:53,849 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:42:53,853 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:42:53,871 - Loading faiss with AVX2 support.
+2025-10-03 10:42:53,885 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:42:53,888 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:44:08,975 - Loading faiss with AVX2 support.
+2025-10-03 10:44:08,991 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:44:08,994 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:44:09,443 - Loading faiss with AVX2 support.
+2025-10-03 10:44:09,457 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:44:09,460 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:44:14,425 - Loading faiss with AVX2 support.
+2025-10-03 10:44:14,438 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:44:14,442 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:44:14,516 - Loading faiss with AVX2 support.
+2025-10-03 10:44:14,528 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:44:14,531 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:45:12,606 - Loading faiss with AVX2 support.
+2025-10-03 10:45:12,619 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:45:12,622 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:45:12,749 - Loading faiss with AVX2 support.
+2025-10-03 10:45:12,762 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:45:12,765 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:45:27,600 - Loading faiss with AVX2 support.
+2025-10-03 10:45:27,615 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:45:27,619 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:45:28,018 - Loading faiss with AVX2 support.
+2025-10-03 10:45:28,030 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:45:28,034 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:45:54,591 - Loading faiss with AVX2 support.
+2025-10-03 10:45:54,602 - Loading faiss with AVX2 support.
+2025-10-03 10:45:54,605 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:45:54,608 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:45:54,614 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:45:54,618 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:49:11,316 - Loading faiss with AVX2 support.
+2025-10-03 10:49:11,332 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:49:11,335 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:49:11,972 - Loading faiss with AVX2 support.
+2025-10-03 10:49:11,986 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:49:11,990 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:49:15,078 - Loading faiss with AVX2 support.
+2025-10-03 10:49:15,079 - Loading faiss with AVX2 support.
+2025-10-03 10:49:15,093 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:49:15,093 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:49:15,096 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:49:15,096 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:49:23,112 - ==================================================
+2025-10-03 10:49:23,112 - 問題：請問關西服務區的設施
+2025-10-03 10:49:23,112 - IP：127.0.0.1
+2025-10-03 10:49:23,112 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-10-03 10:49:25,445 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-10-03 10:49:25,709 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 10:49:26,894 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 10:49:26,895 - [❌] 寫入資料庫失敗：label empty or too long
+2025-10-03 10:51:36,808 - Loading faiss with AVX2 support.
+2025-10-03 10:51:36,821 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:51:36,824 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:51:36,933 - Loading faiss with AVX2 support.
+2025-10-03 10:51:36,946 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:51:36,949 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:52:47,125 - Loading faiss with AVX2 support.
+2025-10-03 10:52:47,139 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:52:47,143 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:52:47,147 - Loading faiss with AVX2 support.
+2025-10-03 10:52:47,160 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:52:47,164 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:52:49,758 - Loading faiss with AVX2 support.
+2025-10-03 10:52:49,765 - Loading faiss with AVX2 support.
+2025-10-03 10:52:49,771 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:52:49,775 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 10:52:49,778 - Successfully loaded faiss with AVX2 support.
+2025-10-03 10:52:49,781 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 11:42:07,990 - ==================================================
+2025-10-03 11:42:07,990 - 問題：我在大甲附近，請問最近的休息站
+2025-10-03 11:42:07,990 - IP：127.0.0.1
+2025-10-03 11:42:07,990 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-10-03 11:42:09,888 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-10-03 11:42:10,280 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 11:42:11,508 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 11:42:11,509 - [❌] 寫入資料庫失敗：label empty or too long
+2025-10-03 11:42:23,912 - ==================================================
+2025-10-03 11:42:23,913 - 問題：我在大甲附近，請問最近的服務區
+2025-10-03 11:42:23,913 - IP：127.0.0.1
+2025-10-03 11:42:23,913 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-10-03 11:42:25,376 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 11:42:25,431 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-10-03 11:42:27,850 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 11:42:27,851 - [❌] 寫入資料庫失敗：label empty or too long
+2025-10-03 11:42:33,996 - ==================================================
+2025-10-03 11:42:33,997 - 問題：我在178公里處，請問最近的交流道?
+2025-10-03 11:42:33,997 - IP：127.0.0.1
+2025-10-03 11:42:33,997 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-10-03 11:42:35,978 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-10-03 11:42:36,023 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 11:42:37,869 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 11:42:37,871 - [❌] 寫入資料庫失敗：label empty or too long
+2025-10-03 11:42:48,983 - ==================================================
+2025-10-03 11:42:48,983 - 問題：請問國道1號有施工路段?
+2025-10-03 11:42:48,983 - IP：127.0.0.1
+2025-10-03 11:42:48,983 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-10-03 11:42:50,516 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-10-03 11:42:52,202 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 11:42:52,211 - [❌] 寫入資料庫失敗：label empty or too long
+2025-10-03 11:42:52,238 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 11:42:55,188 - ==================================================
+2025-10-03 11:42:55,188 - 問題：台中市天氣狀況
+2025-10-03 11:42:55,189 - IP：127.0.0.1
+2025-10-03 11:42:55,189 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-10-03 11:42:56,662 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-10-03 11:42:57,116 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 11:43:00,270 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 11:43:00,288 - [❌] 寫入資料庫失敗：label empty or too long
+2025-10-03 11:53:45,587 - Loading faiss with AVX2 support.
+2025-10-03 11:53:45,601 - Successfully loaded faiss with AVX2 support.
+2025-10-03 11:53:45,604 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 11:53:45,832 - Loading faiss with AVX2 support.
+2025-10-03 11:53:45,845 - Successfully loaded faiss with AVX2 support.
+2025-10-03 11:53:45,849 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 11:55:37,674 - Loading faiss with AVX2 support.
+2025-10-03 11:55:37,691 - Successfully loaded faiss with AVX2 support.
+2025-10-03 11:55:37,698 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 11:55:38,133 - Loading faiss with AVX2 support.
+2025-10-03 11:55:38,148 - Successfully loaded faiss with AVX2 support.
+2025-10-03 11:55:38,151 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 13:31:57,281 - Loading faiss with AVX2 support.
+2025-10-03 13:31:57,293 - Loading faiss with AVX2 support.
+2025-10-03 13:31:57,508 - Successfully loaded faiss with AVX2 support.
+2025-10-03 13:31:57,508 - Successfully loaded faiss with AVX2 support.
+2025-10-03 13:31:57,512 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 13:31:57,512 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 13:37:15,009 - Loading faiss with AVX2 support.
+2025-10-03 13:37:15,024 - Successfully loaded faiss with AVX2 support.
+2025-10-03 13:37:15,028 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 13:37:15,572 - Loading faiss with AVX2 support.
+2025-10-03 13:37:15,588 - Successfully loaded faiss with AVX2 support.
+2025-10-03 13:37:15,592 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 13:39:20,866 - Loading faiss with AVX2 support.
+2025-10-03 13:39:20,881 - Successfully loaded faiss with AVX2 support.
+2025-10-03 13:39:20,885 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 13:39:21,143 - Loading faiss with AVX2 support.
+2025-10-03 13:39:21,155 - Successfully loaded faiss with AVX2 support.
+2025-10-03 13:39:21,159 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 13:47:23,169 - ==================================================
+2025-10-03 13:47:23,169 - 問題：關西服務區有麼設施
+2025-10-03 13:47:23,169 - IP：127.0.0.1
+2025-10-03 13:47:23,169 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-10-03 13:47:25,261 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-10-03 13:47:25,564 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 13:47:27,091 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 13:47:27,092 - [❌] 寫入資料庫失敗：label empty or too long
+2025-10-03 13:47:27,092 - [router] {"route": "qa", "filters": {}, "reason": "router_error:TimeoutError", "forced_qa": false, "timings_ms": 3922}
+2025-10-03 13:51:53,613 - Loading faiss with AVX2 support.
+2025-10-03 13:51:53,627 - Successfully loaded faiss with AVX2 support.
+2025-10-03 13:51:53,631 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 13:51:53,852 - Loading faiss with AVX2 support.
+2025-10-03 13:51:53,864 - Successfully loaded faiss with AVX2 support.
+2025-10-03 13:51:53,867 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 13:52:04,527 - ==================================================
+2025-10-03 13:52:04,527 - 問題：關西服務區有麼設施
+2025-10-03 13:52:04,527 - IP：127.0.0.1
+2025-10-03 13:52:04,527 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-10-03 13:52:06,212 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-10-03 13:52:06,854 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 13:52:07,810 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 13:52:07,829 - [❌] 寫入資料庫失敗：label empty or too long
+2025-10-03 13:52:07,829 - [router] {"route": "qa", "filters": {}, "reason": "router_error:TimeoutError", "forced_qa": false, "timings_ms": 3301}
+2025-10-03 14:01:50,516 - Loading faiss with AVX2 support.
+2025-10-03 14:01:50,545 - Successfully loaded faiss with AVX2 support.
+2025-10-03 14:01:50,553 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 14:01:50,743 - Loading faiss with AVX2 support.
+2025-10-03 14:01:50,758 - Successfully loaded faiss with AVX2 support.
+2025-10-03 14:01:50,762 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 14:02:14,887 - ==================================================
+2025-10-03 14:02:14,888 - 問題：關西服務區有甚麼設施
+2025-10-03 14:02:14,888 - IP：127.0.0.1
+2025-10-03 14:02:14,888 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-10-03 14:02:17,127 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-10-03 14:02:17,954 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 14:02:20,065 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 14:02:23,385 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 14:02:23,395 - [❌] 寫入資料庫失敗：label empty or too long
+2025-10-03 14:02:23,395 - [router] {"route": "qa", "filters": {}, "reason": "router_error:TimeoutError", "forced_qa": false, "timings_ms": 8507}
+2025-10-03 14:03:03,788 - ==================================================
+2025-10-03 14:03:03,788 - 問題：台中市天氣
+2025-10-03 14:03:03,788 - IP：127.0.0.1
+2025-10-03 14:03:03,789 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-10-03 14:03:05,477 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-10-03 14:03:06,408 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 14:03:07,408 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 14:03:08,739 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 14:03:08,741 - [❌] 寫入資料庫失敗：label empty or too long
+2025-10-03 14:03:08,741 - [router] {"route": "qa", "filters": {}, "reason": "router_error:TimeoutError", "forced_qa": false, "timings_ms": 4952}
+2025-10-03 14:03:17,003 - ==================================================
+2025-10-03 14:03:17,003 - 問題：請問國道1號有施工路段?
+2025-10-03 14:03:17,003 - IP：127.0.0.1
+2025-10-03 14:03:17,003 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-10-03 14:03:18,909 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-10-03 14:03:19,516 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 14:03:20,570 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 14:03:23,726 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 14:03:23,729 - [❌] 寫入資料庫失敗：label empty or too long
+2025-10-03 14:03:23,729 - [router] {"route": "qa", "filters": {}, "reason": "router_error:TimeoutError", "forced_qa": false, "timings_ms": 6725}
+2025-10-03 14:06:50,751 - Loading faiss with AVX2 support.
+2025-10-03 14:06:50,764 - Successfully loaded faiss with AVX2 support.
+2025-10-03 14:06:50,769 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 14:06:52,481 - Loading faiss with AVX2 support.
+2025-10-03 14:06:52,494 - Successfully loaded faiss with AVX2 support.
+2025-10-03 14:06:52,499 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 14:07:54,729 - Loading faiss with AVX2 support.
+2025-10-03 14:07:54,742 - Successfully loaded faiss with AVX2 support.
+2025-10-03 14:07:54,746 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 14:07:54,832 - Loading faiss with AVX2 support.
+2025-10-03 14:07:54,845 - Successfully loaded faiss with AVX2 support.
+2025-10-03 14:07:54,849 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 14:14:12,308 - ==================================================
+2025-10-03 14:14:12,308 - 問題：台中天氣
+2025-10-03 14:14:12,308 - IP：127.0.0.1
+2025-10-03 14:14:12,308 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-10-03 14:14:15,004 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 14:14:16,738 - [❌] 寫入資料庫失敗：label empty or too long
+2025-10-03 14:14:16,738 - [router] {"route": "weather", "filters": {"place": "台中"}, "reason": "router_error:TimeoutError", "forced_qa": false, "fallback": "fallback_weather", "timings_ms": 4429}
+2025-10-03 14:24:50,650 - Loading faiss with AVX2 support.
+2025-10-03 14:24:50,663 - Successfully loaded faiss with AVX2 support.
+2025-10-03 14:24:50,663 - Loading faiss with AVX2 support.
+2025-10-03 14:24:50,666 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 14:24:50,675 - Successfully loaded faiss with AVX2 support.
+2025-10-03 14:24:50,678 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 14:25:17,426 - Loading faiss with AVX2 support.
+2025-10-03 14:25:17,438 - Successfully loaded faiss with AVX2 support.
+2025-10-03 14:25:17,441 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 14:25:17,502 - Loading faiss with AVX2 support.
+2025-10-03 14:25:17,514 - Successfully loaded faiss with AVX2 support.
+2025-10-03 14:25:17,518 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 14:25:25,559 - Loading faiss with AVX2 support.
+2025-10-03 14:25:25,572 - Successfully loaded faiss with AVX2 support.
+2025-10-03 14:25:25,576 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 14:25:25,738 - Loading faiss with AVX2 support.
+2025-10-03 14:25:25,751 - Successfully loaded faiss with AVX2 support.
+2025-10-03 14:25:25,754 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 14:25:45,326 - ==================================================
+2025-10-03 14:25:45,327 - 問題：台北天氣
+2025-10-03 14:25:45,327 - IP：127.0.0.1
+2025-10-03 14:25:45,327 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-10-03 14:25:47,381 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 14:25:48,832 - [❌] 寫入資料庫失敗：label empty or too long
+2025-10-03 14:25:48,832 - [router] {"route": "weather", "filters": {"place": "台北"}, "reason": "router_error:TimeoutError", "forced_qa": false, "fallback": "fallback_weather", "timings_ms": 3505}
+2025-10-03 14:26:22,412 - ==================================================
+2025-10-03 14:26:22,412 - 問題：泰安服務區有甚麼設施
+2025-10-03 14:26:22,412 - IP：127.0.0.1
+2025-10-03 14:26:22,412 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-10-03 14:26:23,567 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 14:26:24,000 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-10-03 14:26:25,502 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 14:26:27,879 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 14:26:27,891 - [❌] 寫入資料庫失敗：label empty or too long
+2025-10-03 14:26:27,891 - [router] {"route": "qa", "filters": {}, "reason": "詢問服務區設施，屬於泛用諮詢", "forced_qa": false, "fallback": "", "timings_ms": 5479}
+2025-10-03 14:57:37,164 - ==================================================
+2025-10-03 14:57:37,165 - 問題：國道一號路況
+2025-10-03 14:57:37,165 - IP：127.0.0.1
+2025-10-03 14:57:37,165 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-10-03 14:57:38,699 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-10-03 14:57:39,597 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 14:57:41,447 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 14:57:44,949 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 14:57:44,950 - [❌] 寫入資料庫失敗：label empty or too long
+2025-10-03 14:57:44,950 - [router] {"route": "qa", "filters": {}, "reason": "router_error:TimeoutError", "forced_qa": false, "fallback": "", "timings_ms": 7785}
+2025-10-03 15:03:36,728 - ==================================================
+2025-10-03 15:03:36,728 - 問題：泰安服務區車位
+2025-10-03 15:03:36,728 - IP：127.0.0.1
+2025-10-03 15:03:36,728 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-10-03 15:03:38,426 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-10-03 15:03:40,148 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 15:03:40,196 - [❌] 寫入資料庫失敗：label empty or too long
+2025-10-03 15:03:40,197 - [router] {"route": "qa", "filters": {}, "reason": "router_error:TimeoutError", "forced_qa": false, "fallback": "", "timings_ms": 3467}
+2025-10-03 15:03:40,865 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 15:14:31,750 - Loading faiss with AVX2 support.
+2025-10-03 15:14:31,761 - Loading faiss with AVX2 support.
+2025-10-03 15:14:32,184 - Successfully loaded faiss with AVX2 support.
+2025-10-03 15:14:32,184 - Successfully loaded faiss with AVX2 support.
+2025-10-03 15:14:32,188 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 15:14:32,188 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 15:20:26,118 - ==================================================
+2025-10-03 15:20:26,118 - 問題：泰安服務區車位
+2025-10-03 15:20:26,118 - IP：127.0.0.1
+2025-10-03 15:20:26,118 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-10-03 15:20:28,552 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 15:20:29,013 - [❌] 寫入資料庫失敗：label empty or too long
+2025-10-03 15:20:29,013 - [router] {"route": "parking", "filters": {"parking_name": "泰安服務區"}, "reason": "router_error:TimeoutError", "forced_qa": false, "fallback": "fallback_parking", "timings_ms": 2894}
+2025-10-03 15:20:39,720 - ==================================================
+2025-10-03 15:20:39,720 - 問題：關西服務區車位
+2025-10-03 15:20:39,720 - IP：127.0.0.1
+2025-10-03 15:20:39,720 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-10-03 15:20:40,901 - [❌] 寫入資料庫失敗：label empty or too long
+2025-10-03 15:20:40,901 - [router] {"route": "parking", "filters": {"parking_name": "關西服務區"}, "reason": "router_error:TimeoutError", "forced_qa": false, "fallback": "fallback_parking", "timings_ms": 1180}
+2025-10-03 15:20:41,519 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 15:20:50,647 - ==================================================
+2025-10-03 15:20:50,647 - 問題：台南天氣
+2025-10-03 15:20:50,647 - IP：127.0.0.1
+2025-10-03 15:20:50,647 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-10-03 15:20:53,262 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 15:20:54,413 - [❌] 寫入資料庫失敗：label empty or too long
+2025-10-03 15:20:54,414 - [router] {"route": "weather", "filters": {"place": "台南"}, "reason": "router_error:TimeoutError", "forced_qa": false, "fallback": "fallback_weather", "timings_ms": 3766}
+2025-10-03 15:21:29,823 - ==================================================
+2025-10-03 15:21:29,823 - 問題：國道一號路況
+2025-10-03 15:21:29,823 - IP：127.0.0.1
+2025-10-03 15:21:29,823 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-10-03 15:21:31,795 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-10-03 15:21:32,209 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 15:21:34,067 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 15:21:36,583 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 15:21:36,584 - [❌] 寫入資料庫失敗：label empty or too long
+2025-10-03 15:21:36,584 - [router] {"route": "qa", "filters": {}, "reason": "router_error:TimeoutError", "forced_qa": false, "fallback": "", "timings_ms": 6761}
+2025-10-03 15:22:45,909 - ==================================================
+2025-10-03 15:22:45,909 - 問題：國道1號路況
+2025-10-03 15:22:45,909 - IP：127.0.0.1
+2025-10-03 15:22:45,909 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-10-03 15:22:47,219 - [❌] 寫入資料庫失敗：label empty or too long
+2025-10-03 15:22:47,219 - [router] {"route": "incidents", "filters": {"road": "國道1號"}, "reason": "router_error:TimeoutError", "forced_qa": false, "fallback": "fallback_incidents", "timings_ms": 1310}
+2025-10-03 15:22:48,244 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 15:23:22,580 - Loading faiss with AVX2 support.
+2025-10-03 15:23:22,588 - Loading faiss with AVX2 support.
+2025-10-03 15:23:22,921 - Successfully loaded faiss with AVX2 support.
+2025-10-03 15:23:22,921 - Successfully loaded faiss with AVX2 support.
+2025-10-03 15:23:22,926 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 15:23:22,926 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 15:23:48,420 - Loading faiss with AVX2 support.
+2025-10-03 15:23:48,433 - Successfully loaded faiss with AVX2 support.
+2025-10-03 15:23:48,437 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 15:23:48,879 - Loading faiss with AVX2 support.
+2025-10-03 15:23:48,892 - Successfully loaded faiss with AVX2 support.
+2025-10-03 15:23:48,896 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 15:24:13,326 - Loading faiss with AVX2 support.
+2025-10-03 15:24:13,339 - Successfully loaded faiss with AVX2 support.
+2025-10-03 15:24:13,343 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 15:24:13,514 - Loading faiss with AVX2 support.
+2025-10-03 15:24:13,526 - Successfully loaded faiss with AVX2 support.
+2025-10-03 15:24:13,531 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 15:24:25,028 - ==================================================
+2025-10-03 15:24:25,028 - 問題：國道一號路況
+2025-10-03 15:24:25,028 - IP：127.0.0.1
+2025-10-03 15:24:25,028 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-10-03 15:24:26,347 - [❌] 寫入資料庫失敗：label empty or too long
+2025-10-03 15:24:26,347 - [router] {"route": "incidents", "filters": {"road": "國道1號"}, "reason": "router_error:TimeoutError", "forced_qa": false, "fallback": "fallback_incidents", "timings_ms": 1318}
+2025-10-03 15:24:27,517 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 15:24:38,769 - ==================================================
+2025-10-03 15:24:38,770 - 問題：國道三號南下 路況
+2025-10-03 15:24:38,770 - IP：127.0.0.1
+2025-10-03 15:24:38,770 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-10-03 15:24:40,001 - [❌] 寫入資料庫失敗：label empty or too long
+2025-10-03 15:24:40,001 - [router] {"route": "incidents", "filters": {"road": "國道3號", "direction": "南下"}, "reason": "router_error:TimeoutError", "forced_qa": false, "fallback": "fallback_incidents", "timings_ms": 1231}
+2025-10-03 15:24:40,442 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 15:24:51,549 - ==================================================
+2025-10-03 15:24:51,549 - 問題：國1 南下 台中到彰化 路況
+2025-10-03 15:24:51,549 - IP：127.0.0.1
+2025-10-03 15:24:51,549 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-10-03 15:24:52,790 - [❌] 寫入資料庫失敗：label empty or too long
+2025-10-03 15:24:52,790 - [router] {"route": "incidents", "filters": {"road": "國道1號", "direction": "南下"}, "reason": "router_error:TimeoutError", "forced_qa": false, "fallback": "fallback_incidents", "timings_ms": 1239}
+2025-10-03 15:24:53,287 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 15:46:55,813 - Loading faiss with AVX2 support.
+2025-10-03 15:46:55,828 - Successfully loaded faiss with AVX2 support.
+2025-10-03 15:46:55,832 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-10-03 15:47:22,444 - ==================================================
+2025-10-03 15:47:22,444 - 問題：國1 南下 台中到彰化 路況
+2025-10-03 15:47:22,444 - IP：127.0.0.1
+2025-10-03 15:47:22,444 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+2025-10-03 15:47:23,829 - [❌] 寫入資料庫失敗：label empty or too long
+2025-10-03 15:47:23,829 - [router] {"route": "incidents", "filters": {"road": "國道1號", "direction": "南下"}, "reason": "router_error:TimeoutError", "forced_qa": false, "fallback": "fallback_incidents", "timings_ms": 1384}
+2025-10-03 15:47:25,502 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

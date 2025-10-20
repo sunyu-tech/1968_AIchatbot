@@ -1,0 +1,545 @@
+/* ✅ 整個對話框外層容器 */
+.chat-fixed-wrapper {
+    pointer-events: auto;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    width: 550px;
+    max-height: 1000px;
+    z-index: 99999;
+    font-family: "Arial", sans-serif;
+}
+
+/* ✅ 對話框主體盒子 */
+.chat-box {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid #ccc;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+/* ✅ 頂部 header 區塊 */
+.chat-header {
+    background: linear-gradient(to right, #00557A, #006699);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #004f72;
+}
+
+/* ✅ 吉祥物圖示 */
+.chat-header img.mascot {
+    width: 65px;
+    height: 65px;
+    margin-right: 10px;
+}
+
+/* ✅ Header 文字 */
+.header-name {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* ✅ 訊息區塊 */
+.chat-messages {
+    padding: 10px;
+    height: 600px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+}
+
+/* ✅ 每一則訊息外層 */
+.system-message,
+.user-message {
+    margin-bottom: 12px;
+}
+
+/* ✅ 機器人訊息 */
+.system-message {
+    display: flex;
+    align-items: flex-start;
+}
+
+.system-message .mascot {
+    width: 34px;
+    height: 34px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.system-message .message-content {
+    background: #ececec;
+    /* border-left: 4px solid #006699;
+    color: #222; */
+    padding: 10px 14px;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 75%;
+    word-break: break-word;
+    line-height: 1.5;
+}
+
+.system-message .system-time {
+    font-size: 12px;
+    color: #999;
+    margin-top: 4px;
+    margin-left: 44px;
+}
+
+/* ✅ 使用者訊息 */
+.user-message {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.user-message .message-bubble {
+    display: flex;
+    align-items: flex-end;
+    gap: 6px;
+    max-width: 75%;
+}
+
+.user-message .message-content {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    background-color: #e6f4ff;
+    border: 1px solid #b3e0ff;
+    color: #333;
+    padding: 10px 14px;
+    border-radius: 8px;
+    word-break: break-word;
+}
+
+.user-message .message-time {
+    font-size: 12px;
+    color: #999;
+    white-space: nowrap;
+    align-self: flex-end;
+}
+
+/* ✅ 輸入欄與送出按鈕區塊 */
+.chat-footer {
+    display: flex;
+    padding: 8px;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+}
+
+/* ✅ 輸入欄 */
+.chat-input {
+    flex: 1;
+    min-height: 36px;
+    max-height: 150px;
+    padding: 6px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    line-height: 1.4;
+    overflow-y: hidden;
+    resize: none;
+    color: #000;
+}
+
+/* ✅ 送出按鈕 */
+.send-btn {
+    background-color: #0a8a05;
+    border: none;
+    padding: 6px;
+    margin-left: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.send-btn:hover {
+    background-color: #0ba50a;
+    transform: scale(1.05);
+}
+
+.send-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+/* ✅ 關閉按鈕 */
+.close-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0 8px;
+    margin: 0;
+    line-height: 1;
+}
+
+/* ✅ 手機版 RWD */
+@media (max-width: 768px) {
+    .chat-fixed-wrapper {
+        width: 100vw;
+        height: 100vh;
+        right: 0;
+        bottom: 0;
+        border-radius: 0;
+        max-height: 100vh;
+    }
+
+    .chat-box {
+        height: 100vh;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .chat-header {
+        padding: 12px 10px;
+    }
+
+    .chat-header img.mascot {
+        width: 50px;
+        height: 50px;
+    }
+
+    .header-name {
+        font-size: 18px;
+    }
+
+    .chat-messages {
+        height: calc(100vh - 170px);
+        padding: 8px;
+    }
+
+    .chat-footer {
+        flex-direction: row;
+        padding: 6px;
+    }
+
+    .chat-input {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .send-btn {
+        width: 48px;
+        height: 48px;
+    }
+
+    .send-icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* ===== 滿意度框樣式 ===== */
+.feedback-card {
+    margin-top: 10px;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.fb-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.fb-title {
+    font-weight: 600;
+    color: #333;
+}
+
+.fb-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.fb-actions .fb-good,
+.fb-actions .fb-bad,
+.fb-form-actions .fb-submit,
+.fb-form-actions .fb-cancel {
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.fb-actions .fb-good:hover {
+    background: #e9f9ed;
+    border-color: #a8e6b0;
+}
+
+.fb-actions .fb-bad:hover {
+    background: #fff1f1;
+    border-color: #f2b5b5;
+}
+
+.fb-form {
+    margin-top: 8px;
+}
+
+.fb-text {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 14px;
+    resize: vertical;
+}
+
+.fb-form-actions {
+    margin-top: 6px;
+    display: flex;
+    gap: 8px;
+}
+
+.fb-thanks {
+    font-size: 14px;
+    color: #666;
+    padding: 6px 2px;
+}
+
+/* ===== 漢堡按鈕 ===== */
+.menu-btn {
+    position: relative;
+    border: 1px solid #ccc;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-btn:hover {
+    background: #f7f7f7;
+}
+
+.menu-icon,
+.menu-icon::before,
+.menu-icon::after {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: #333;
+    border-radius: 2px;
+    position: relative;
+}
+
+.menu-icon::before {
+    position: absolute;
+    top: -6px;
+}
+
+.menu-icon::after {
+    position: absolute;
+    top: 6px;
+}
+
+/* ===== 選單面板（4×1 橫列大卡片） ===== */
+.menu-panel {
+    position: absolute;
+    bottom: 54px;
+    left: 8px;
+    right: 8px;
+    /* 撐到右側，讓 4 欄有足夠寬度 */
+    background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    display: none;
+    z-index: 100000;
+    max-height: 60vh;
+    /* 內容多時可滾動 */
+    overflow-y: auto;
+}
+
+.menu-panel.open {
+    display: block;
+}
+
+.menu-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* ← 4 欄 */
+    gap: 10px;
+}
+
+/* 大卡片：置中大標、加大可點範圍 */
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    /* ↓ 原本 16px */
+    min-height: 44px;
+    /* ↓ 原本 88px */
+    border: 1px solid #eee;
+    border-radius: 12px;
+    background: #fafafa;
+    cursor: pointer;
+    transition: transform .08s ease, background .2s, border-color .2s, box-shadow .2s;
+}
+
+.menu-item:hover,
+.menu-item:focus {
+    background: #f1f8ff;
+    border-color: #cfe6ff;
+    transform: translateY(-1px);
+    outline: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .06);
+}
+
+/* 標題（加大加粗） */
+.mi-title {
+    font-weight: 800;
+    font-size: 20px;
+    /* 想更大可調 22px */
+    line-height: 1.25;
+    letter-spacing: 0.3px;
+    color: #132339;
+}
+
+/* RWD：平板 2 欄、手機 1 欄 */
+@media (max-width: 768px) {
+    .menu-panel {
+        left: 6px;
+        right: 6px;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mi-title {
+        font-size: 18px;
+    }
+
+    .menu-item {
+        min-height: 84px;
+        padding: 14px;
+    }
+}
+
+@media (max-width: 420px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== 配色（可自行調整） ===== */
+:root {
+    --c-traffic: #0a8a05;
+    /* 交通路況：綠 */
+    --c-safety: #0b72b9;
+    /* 行車安全：藍 */
+    --c-service: #d97706;
+    /* 服務資訊：橙 */
+    --c-faq: #7c3aed;
+    /* 常見問題：紫 */
+
+    --c-traffic-bg: #e8f6e8;
+    --c-safety-bg: #e8f2fb;
+    --c-service-bg: #fff3e6;
+    --c-faq-bg: #f3e8ff;
+
+    --c-traffic-bg-h: #dff0df;
+    --c-safety-bg-h: #dceaf9;
+    --c-service-bg-h: #ffe9d3;
+    --c-faq-bg-h: #eadffb;
+}
+
+/* 交通路況（綠） */
+.menu-item[data-key="交通路況"] {
+    background: var(--c-traffic-bg);
+    border-color: color-mix(in oklab, var(--c-traffic) 20%, #ffffff);
+}
+
+.menu-item[data-key="交通路況"]:hover,
+.menu-item[data-key="交通路況"]:focus {
+    background: var(--c-traffic-bg-h);
+    border-color: color-mix(in oklab, var(--c-traffic) 45%, #ffffff);
+    box-shadow: 0 4px 12px color-mix(in oklab, var(--c-traffic) 18%, transparent);
+}
+
+/* 行車安全（藍） */
+.menu-item[data-key="行車安全"] {
+    background: var(--c-safety-bg);
+    border-color: color-mix(in oklab, var(--c-safety) 20%, #ffffff);
+}
+
+.menu-item[data-key="行車安全"]:hover,
+.menu-item[data-key="行車安全"]:focus {
+    background: var(--c-safety-bg-h);
+    border-color: color-mix(in oklab, var(--c-safety) 45%, #ffffff);
+    box-shadow: 0 4px 12px color-mix(in oklab, var(--c-safety) 18%, transparent);
+}
+
+/* 服務資訊（橙） */
+.menu-item[data-key="服務資訊"] {
+    background: var(--c-service-bg);
+    border-color: color-mix(in oklab, var(--c-service) 20%, #ffffff);
+}
+
+.menu-item[data-key="服務資訊"]:hover,
+.menu-item[data-key="服務資訊"]:focus {
+    background: var(--c-service-bg-h);
+    border-color: color-mix(in oklab, var(--c-service) 45%, #ffffff);
+    box-shadow: 0 4px 12px color-mix(in oklab, var(--c-service) 18%, transparent);
+}
+
+/* 常見問題（紫） */
+.menu-item[data-key="常見問題"] {
+    background: var(--c-faq-bg);
+    border-color: color-mix(in oklab, var(--c-faq) 20%, #ffffff);
+}
+
+.menu-item[data-key="常見問題"]:hover,
+.menu-item[data-key="常見問題"]:focus {
+    background: var(--c-faq-bg-h);
+    border-color: color-mix(in oklab, var(--c-faq) 45%, #ffffff);
+    box-shadow: 0 4px 12px color-mix(in oklab, var(--c-faq) 18%, transparent);
+}
+
+/* 鍵盤可及性 */
+.menu-item:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}

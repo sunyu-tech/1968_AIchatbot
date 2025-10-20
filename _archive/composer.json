@@ -1,0 +1,7 @@
+{
+    "require": {
+        "spatie/pdf-to-text": "^1.54",
+        "smalot/pdfparser": "^2.11",
+        "guzzlehttp/guzzle": "^7.9"
+    }
+}
