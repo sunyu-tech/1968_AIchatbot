@@ -3,6 +3,14 @@ from xml.etree import ElementTree as ET
 from typing import List
 from models.incidents import Incident  # ← 絕對匯入
 
+def safe_float(x):
+    try:
+        if x is None or x == "":
+            return None
+        return float(str(x).replace(",", ""))
+    except Exception:
+        return None
+
 def _node_to_flat_dict(node: ET.Element) -> dict:
     d = {k.lower(): v for k, v in node.attrib.items()}
     for ch in node:

@@ -287,15 +287,45 @@ function sendMessage() {
         const answer = data.answer || "很抱歉，找不到答案。";
         const pages = data.pages && data.pages.length ? `（第 ${data.pages.join(", ")} 頁）` : "";
 
+        // ===== 處理換行與 Disclaimer =====
+        const RAW_DISCLAIMER = "以上內容由 AI 協助生成，僅供參考，實際狀況請以官方資訊與即時路況為準。";
+
+        // 分離主內容與 disclaimer
+        let mainText = answer;
+        let disclaimerText = "";
+
+        if (answer.includes(RAW_DISCLAIMER)) {
+            mainText = answer.replace(RAW_DISCLAIMER, "").trim();
+            disclaimerText = RAW_DISCLAIMER;
+        }
+
+        // HTML escape + 換行
+        function escAndBr(text) {
+            return (text || "")
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/\n/g, "<br>");
+        }
+
         const botMsg = document.createElement('div');
         botMsg.className = 'system-message';
+
         botMsg.innerHTML = `
             <img class="mascot" src="${WEB_ROOT}/images/robot_.png" alt="mascot" />
             <div class="message-content">
-                ${answer}
+                ${escAndBr(mainText)}
+
+                ${disclaimerText
+                    ? `<div class="chat-disclaimer">※ ${disclaimerText}</div>`
+                    : ""
+                }
                 <div class="message-source">${pages}</div>
             </div>
-            <div class="system-time">${new Date().toLocaleTimeString('zh-TW', { hour: '2-digit', minute: '2-digit', hour12: true })}</div>
+
+            <div class="system-time">
+                ${new Date().toLocaleTimeString('zh-TW', { hour: '2-digit', minute: '2-digit', hour12: true })}
+            </div>
         `;
         chatBox.appendChild(botMsg);
         chatBox.scrollTop = chatBox.scrollHeight;
@@ -311,6 +341,7 @@ function sendMessage() {
 
         console.timeEnd("⏱ 回應處理與 DOM 建構");
     })
+
     .catch(error => {
         console.error("❌ 錯誤：", error);
 

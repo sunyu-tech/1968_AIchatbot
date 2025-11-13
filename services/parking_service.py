@@ -68,13 +68,23 @@ def fetch_parking() -> List[Dict]:
     _set_cache(items)
     return items
 
+def _norm_sa(s: str) -> str:
+    return (s or "").replace("服務區", "").replace("臺","台").strip()
+
 def summarize_parking(keyword: str = "", limit: int = 8) -> str:
     items = fetch_parking()
     if not items:
         return "目前查無服務區停車位資料。"
     if keyword:
-        k = keyword.strip()
-        items = [x for x in items if k in (x.get("Name") or "")]
+        k = _norm_sa(keyword)
+        cand = []
+        for x in items:
+            name = x.get("Name") or ""
+            name_n = _norm_sa(name)
+            # 完整包含或前綴/後綴近似都算
+            if (k in name_n) or (name_n in k):
+                cand.append(x)
+        items = cand
     if not items:
         return f"找不到與「{keyword}」相符的服務區停車位資料。"
 

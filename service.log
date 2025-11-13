@@ -1020,3 +1020,491 @@
 2025-10-03 15:47:23,829 - [❌] 寫入資料庫失敗：label empty or too long
 2025-10-03 15:47:23,829 - [router] {"route": "incidents", "filters": {"road": "國道1號", "direction": "南下"}, "reason": "router_error:TimeoutError", "forced_qa": false, "fallback": "fallback_incidents", "timings_ms": 1384}
 2025-10-03 15:47:25,502 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-11 14:41:35,435 - Loading faiss with AVX2 support.
+2025-11-11 14:41:35,450 - Successfully loaded faiss with AVX2 support.
+2025-11-11 14:41:35,454 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-11 14:42:04,483 - ==================================================
+2025-11-11 14:42:04,483 - 問題：西螺服務區停車位
+2025-11-11 14:42:04,483 - IP：127.0.0.1
+2025-11-11 14:42:04,483 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+2025-11-11 14:42:05,071 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-11-11 14:42:05,201 - [❌] 寫入資料庫失敗：label empty or too long
+2025-11-11 14:42:05,201 - [router] {"route": "parking", "filters": {"parking_name": "西螺服務區停服務區"}, "reason": "router_error:AuthenticationError", "forced_qa": false, "fallback": "fallback_parking", "timings_ms": 717}
+2025-11-11 15:10:00,550 - Loading faiss with AVX2 support.
+2025-11-11 15:10:00,563 - Successfully loaded faiss with AVX2 support.
+2025-11-11 15:10:00,566 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-11 15:21:49,903 - Loading faiss with AVX2 support.
+2025-11-11 15:21:49,917 - Successfully loaded faiss with AVX2 support.
+2025-11-11 15:21:49,921 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-11 15:22:16,551 - ==================================================
+2025-11-11 15:22:16,551 - 問題：APP 能查詢國道的服務區廁所狀態嗎？
+2025-11-11 15:22:16,551 - IP：127.0.0.1
+2025-11-11 15:22:16,552 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+2025-11-11 15:22:17,184 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-11-11 15:22:17,468 - 查詢錯誤：Error in __cdecl faiss::FileIOReader::FileIOReader(const char *) at D:\a\faiss-wheels\faiss-wheels\faiss\faiss\impl\io.cpp:68: Error: 'f' failed: could not open faiss_index\faq_1968\index.faiss for reading: No such file or directory
+2025-11-11 15:23:02,174 - ==================================================
+2025-11-11 15:23:02,174 - 問題：APP 能查詢國道的服務區廁所狀態嗎？
+2025-11-11 15:23:02,174 - IP：127.0.0.1
+2025-11-11 15:23:02,174 - 裝置：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+2025-11-11 15:23:02,608 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-11-11 15:23:02,893 - 查詢錯誤：Error in __cdecl faiss::FileIOReader::FileIOReader(const char *) at D:\a\faiss-wheels\faiss-wheels\faiss\faiss\impl\io.cpp:68: Error: 'f' failed: could not open faiss_index\faq_1968\index.faiss for reading: No such file or directory
+2025-11-11 15:49:23,099 - Loading faiss with AVX2 support.
+2025-11-11 15:49:23,112 - Successfully loaded faiss with AVX2 support.
+2025-11-11 15:49:23,115 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-11 15:49:37,051 - Loading faiss with AVX2 support.
+2025-11-11 15:49:37,064 - Successfully loaded faiss with AVX2 support.
+2025-11-11 15:49:37,067 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-11 15:49:42,941 | INFO | Loading faiss with AVX2 support.
+2025-11-11 15:49:42,955 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-11 15:49:42,958 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-11 15:49:45,358 | INFO | Loading faiss with AVX2 support.
+2025-11-11 15:49:45,371 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-11 15:49:45,374 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-11 15:50:10,689 | INFO | Loading faiss with AVX2 support.
+2025-11-11 15:50:10,702 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-11 15:50:10,705 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-11 15:50:25,169 | INFO | [139a0a04] === 新請求 ===
+2025-11-11 15:50:25,169 | INFO | [139a0a04] 問題: APP 能查詢國道的服務區廁所狀態嗎？
+2025-11-11 15:50:25,169 | INFO | [139a0a04] 來源: ip=127.0.0.1 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+2025-11-11 15:50:25,780 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-11-11 15:50:26,062 | ERROR | [139a0a04] 全域例外
+Traceback (most recent call last):
+  File "D:\github\1968_SMART_CHAT_BACK\process_pdf.py", line 369, in query_pdf
+    hit, hit_score, top_docs = faq_gate(q)
+                               ^^^^^^^^^^^
+  File "D:\github\1968_SMART_CHAT_BACK\core\faq_gate.py", line 25, in faq_gate
+    bm25, vs = _load_index()
+               ^^^^^^^^^^^^^
+  File "D:\github\1968_SMART_CHAT_BACK\core\faq_gate.py", line 17, in _load_index
+    _vs = FAISS.load_local(FAQ_INDEX_DIR, OpenAIEmbeddings(), allow_dangerous_deserialization=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\github\1968_SMART_CHAT_BACK\venv310\Lib\site-packages\langchain_community\vectorstores\faiss.py", line 1205, in load_local
+    index = faiss.read_index(str(path / f"{index_name}.faiss"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\github\1968_SMART_CHAT_BACK\venv310\Lib\site-packages\faiss\swigfaiss_avx2.py", line 11141, in read_index
+    return _swigfaiss_avx2.read_index(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Error in __cdecl faiss::FileIOReader::FileIOReader(const char *) at D:\a\faiss-wheels\faiss-wheels\faiss\faiss\impl\io.cpp:68: Error: 'f' failed: could not open faiss_index\faq_1968\index.faiss for reading: No such file or directory
+
+2025-11-11 15:50:56,103 | INFO | Loading faiss with AVX2 support.
+2025-11-11 15:50:56,118 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-11 15:50:56,122 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-11 15:50:59,527 | INFO | [4c2ffd33] === 新請求 ===
+2025-11-11 15:50:59,528 | INFO | [4c2ffd33] 問題: APP 能查詢國道的服務區廁所狀態嗎？
+2025-11-11 15:50:59,528 | INFO | [4c2ffd33] 來源: ip=127.0.0.1 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+2025-11-11 15:51:00,130 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-11-11 15:51:00,426 | ERROR | [4c2ffd33] 全域例外
+Traceback (most recent call last):
+  File "D:\github\1968_SMART_CHAT_BACK\process_pdf.py", line 369, in query_pdf
+    hit, hit_score, top_docs = faq_gate(q)
+                               ^^^^^^^^^^^
+  File "D:\github\1968_SMART_CHAT_BACK\core\faq_gate.py", line 25, in faq_gate
+    bm25, vs = _load_index()
+               ^^^^^^^^^^^^^
+  File "D:\github\1968_SMART_CHAT_BACK\core\faq_gate.py", line 17, in _load_index
+    _vs = FAISS.load_local(FAQ_INDEX_DIR, OpenAIEmbeddings(), allow_dangerous_deserialization=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\github\1968_SMART_CHAT_BACK\venv310\Lib\site-packages\langchain_community\vectorstores\faiss.py", line 1205, in load_local
+    index = faiss.read_index(str(path / f"{index_name}.faiss"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\github\1968_SMART_CHAT_BACK\venv310\Lib\site-packages\faiss\swigfaiss_avx2.py", line 11141, in read_index
+    return _swigfaiss_avx2.read_index(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Error in __cdecl faiss::FileIOReader::FileIOReader(const char *) at D:\a\faiss-wheels\faiss-wheels\faiss\faiss\impl\io.cpp:68: Error: 'f' failed: could not open faiss_index\faq_1968\index.faiss for reading: No such file or directory
+
+2025-11-11 15:59:31,605 | INFO | Loading faiss with AVX2 support.
+2025-11-11 15:59:31,618 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-11 15:59:31,622 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-11 15:59:59,255 | INFO | Loading faiss with AVX2 support.
+2025-11-11 15:59:59,269 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-11 15:59:59,273 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-11 16:00:55,656 | INFO | Loading faiss with AVX2 support.
+2025-11-11 16:00:55,674 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-11 16:00:55,677 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-11 16:01:11,636 | INFO | Loading faiss with AVX2 support.
+2025-11-11 16:01:11,648 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-11 16:01:11,651 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-11 16:01:12,245 | INFO | [940e7708] === 新請求 ===
+2025-11-11 16:01:12,245 | INFO | [940e7708] 問題: APP 能查詢國道的服務區廁所狀態嗎？
+2025-11-11 16:01:12,245 | INFO | [940e7708] 來源: ip=127.0.0.1 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+2025-11-11 16:01:12,543 | WARNING | [faq_gate] FAQ 索引不存在：./faiss_index/faq_1968\index.faiss，嘗試自動建立
+2025-11-11 16:01:12,543 | WARNING | [faq_gate] FAQ_JSON_PATH 不存在：./PDF/1968_QA.json
+2025-11-11 16:01:12,543 | WARNING | [faq_gate] FAQ 無法使用（沒有索引也沒有 JSON）
+2025-11-11 16:01:13,090 | INFO | HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 401 Unauthorized"
+2025-11-11 16:01:13,090 | ERROR | [RAG] AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************uzcA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-11-11 16:01:13,284 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-11-11 16:01:13,284 | ERROR | [QA_FREE] AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************uzcA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-11-11 16:01:13,284 | WARNING | [faq_gate] FAQ 索引不存在：./faiss_index/faq_1968\index.faiss，嘗試自動建立
+2025-11-11 16:01:13,285 | WARNING | [faq_gate] FAQ_JSON_PATH 不存在：./PDF/1968_QA.json
+2025-11-11 16:01:13,285 | WARNING | [faq_gate] FAQ 無法使用（沒有索引也沒有 JSON）
+2025-11-11 16:01:13,304 | ERROR | [940e7708] 寫 DB 失敗
+Traceback (most recent call last):
+  File "D:\github\1968_SMART_CHAT_BACK\process_pdf.py", line 540, in query_pdf
+    conn = pymysql.connect(**DB_CONFIG)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\github\1968_SMART_CHAT_BACK\venv310\Lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "D:\github\1968_SMART_CHAT_BACK\venv310\Lib\site-packages\pymysql\connections.py", line 649, in connect
+    sock = socket.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 841, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 976, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A\AppData\Local\Programs\Python\Python312\Lib\encodings\idna.py", line 173, in encode
+    raise UnicodeError("label empty or too long")
+UnicodeError: label empty or too long
+encoding with 'idna' codec failed
+
+2025-11-11 16:01:13,304 | INFO | [940e7708] 完成 in 1060 ms | route=qa conf=0.00 | sources=[]
+2025-11-11 16:05:21,293 | INFO | Loading faiss with AVX2 support.
+2025-11-11 16:05:21,306 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-11 16:05:21,310 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-11 16:05:21,426 | INFO | [96522f01] === 新請求 ===
+2025-11-11 16:05:21,426 | INFO | [96522f01] 問題: APP 能查詢國道的服務區廁所狀態嗎？
+2025-11-11 16:05:21,426 | INFO | [96522f01] 來源: ip=127.0.0.1 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+2025-11-11 16:05:21,718 | WARNING | [faq_gate] FAQ 索引不存在：./faiss_index/faq_1968\index.faiss，嘗試自動建立
+2025-11-11 16:05:21,718 | WARNING | [faq_gate] FAQ_JSON_PATH 不存在：./PDF/1968_QA.json
+2025-11-11 16:05:21,718 | WARNING | [faq_gate] FAQ 無法使用（沒有索引也沒有 JSON）
+2025-11-11 16:05:22,701 | INFO | HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-11 16:05:22,709 | ERROR | [RAG] ImportError: Could not import rank_bm25, please install with `pip install rank_bm25`.
+2025-11-11 16:05:27,039 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-11 16:05:27,046 | WARNING | [faq_gate] FAQ 索引不存在：./faiss_index/faq_1968\index.faiss，嘗試自動建立
+2025-11-11 16:05:27,046 | WARNING | [faq_gate] FAQ_JSON_PATH 不存在：./PDF/1968_QA.json
+2025-11-11 16:05:27,046 | WARNING | [faq_gate] FAQ 無法使用（沒有索引也沒有 JSON）
+2025-11-11 16:05:27,047 | ERROR | [96522f01] 寫 DB 失敗
+Traceback (most recent call last):
+  File "D:\github\1968_SMART_CHAT_BACK\process_pdf.py", line 540, in query_pdf
+    conn = pymysql.connect(**DB_CONFIG)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\github\1968_SMART_CHAT_BACK\venv310\Lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "D:\github\1968_SMART_CHAT_BACK\venv310\Lib\site-packages\pymysql\connections.py", line 649, in connect
+    sock = socket.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 841, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 976, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A\AppData\Local\Programs\Python\Python312\Lib\encodings\idna.py", line 173, in encode
+    raise UnicodeError("label empty or too long")
+UnicodeError: label empty or too long
+encoding with 'idna' codec failed
+
+2025-11-11 16:05:27,048 | INFO | [96522f01] 完成 in 5621 ms | route=qa conf=0.00 | sources=[{'qa': 'free'}]
+2025-11-11 16:07:42,597 | INFO | Loading faiss with AVX2 support.
+2025-11-11 16:07:42,612 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-11 16:07:42,615 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-11 16:08:05,968 | INFO | Loading faiss with AVX2 support.
+2025-11-11 16:08:05,993 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-11 16:08:05,996 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-11 16:08:33,347 | INFO | Loading faiss with AVX2 support.
+2025-11-11 16:08:33,360 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-11 16:08:33,365 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-11 16:10:50,934 | INFO | Loading faiss with AVX2 support.
+2025-11-11 16:10:50,949 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-11 16:10:50,952 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-11 16:11:39,014 | INFO | Loading faiss with AVX2 support.
+2025-11-11 16:11:39,027 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-11 16:11:39,030 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-11 16:12:31,724 | INFO | Loading faiss with AVX2 support.
+2025-11-11 16:12:31,738 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-11 16:12:31,741 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-11 16:12:37,791 | INFO | [f4109386] === 新請求 ===
+2025-11-11 16:12:37,792 | INFO | [f4109386] 問題: APP 能查詢國道的服務區廁所狀態嗎？
+2025-11-11 16:12:37,792 | INFO | [f4109386] 來源: ip=127.0.0.1 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+2025-11-11 16:12:39,983 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-11 16:12:40,283 | WARNING | [faq_gate] BM25 不可用（可忽略）：ImportError: Could not import rank_bm25, please install with `pip install rank_bm25`.
+2025-11-11 16:12:41,073 | INFO | HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-11 16:12:41,342 | INFO | HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-11 16:12:41,344 | ERROR | [RAG] BM25 略過：ImportError: Could not import rank_bm25, please install with `pip install rank_bm25`.
+2025-11-11 16:12:42,970 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-11 16:12:45,855 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-11 16:12:45,856 | INFO | [f4109386] 完成 in 8064 ms | route=qa conf=0.00 | sources=[{'qa': 'free'}]
+2025-11-11 16:12:45,857 | ERROR | [f4109386] 設定回應標頭失敗
+Traceback (most recent call last):
+  File "D:\github\1968_SMART_CHAT_BACK\process_pdf.py", line 590, in query_pdf
+    response.headers["X-Reason"] = reason
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\github\1968_SMART_CHAT_BACK\venv310\Lib\site-packages\starlette\datastructures.py", line 569, in __setitem__
+    set_value = value.encode("latin-1")
+                ^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 0-14: ordinal not in range(256)
+
+2025-11-11 16:14:42,087 | INFO | Loading faiss with AVX2 support.
+2025-11-11 16:14:42,101 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-11 16:14:42,104 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-11 16:15:15,292 | INFO | Loading faiss with AVX2 support.
+2025-11-11 16:15:15,308 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-11 16:15:15,311 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-11 16:15:38,077 | INFO | Loading faiss with AVX2 support.
+2025-11-11 16:15:38,089 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-11 16:15:38,093 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-11 16:16:20,374 | INFO | Loading faiss with AVX2 support.
+2025-11-11 16:16:20,386 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-11 16:16:20,389 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-11 16:16:51,047 | INFO | Loading faiss with AVX2 support.
+2025-11-11 16:16:51,060 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-11 16:16:51,063 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-11 16:17:18,195 | DEBUG | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2025-11-11 16:17:18,251 | INFO | Loading faiss with AVX2 support.
+2025-11-11 16:17:18,264 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-11 16:17:18,268 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-11 16:17:18,498 | INFO | [2aa001cb] === 新請求 ===
+2025-11-11 16:17:18,498 | INFO | [2aa001cb] 問題: APP 能查詢國道的服務區廁所狀態嗎？
+2025-11-11 16:17:18,498 | INFO | [2aa001cb] 來源: ip=127.0.0.1 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+2025-11-11 16:17:18,790 | DEBUG | Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-08783cef-2f9f-4fad-93ae-426c5c59b420', 'json_data': {'messages': [{'content': '\n你是「台灣交通/氣象智能路由器」。請將使用者問題分類到其中一個 route，並同時抽取查詢參數 filters。\n不得只依靠關鍵字；要能理解多種說法、口語、同義詞、縮寫。\n\n可用 route：\n- incidents（路況事件/施工/出口壅塞）\n- alt_routes（替代道路/旅行時間）\n- scs（開放路肩）\n- parking（服務區停車位）\n- weather（天氣/氣象）\n- refuse（明顯與交通/天氣無關）\n\nfilters 結構（不確定就留空字串）：\n{\n  "type": "事故|施工|出口壅塞|",\n  "region": "north|center|south|pinglin|",\n  "road": "國道1號|台64線|省道61號|",\n  "direction": "南下|北上|東行|西行|順向|逆向|",\n  "exit": "○○交流道|○○出口|",\n  "parking_name": "○○服務區|",\n  "place": "地名或地址（僅用於 weather）"\n}\n\n【分類補充規則】\n- 問「最近的交流道」、「里程處最近交流道」、「附近休息站／服務區」或「服務區有哪些設施」→ 請用 route = "qa"（因為這些沒有現成 API，是泛用諮詢/試算）。\n- 問「服務區停車/車位/剩餘」→ route = "parking"。\n- 問「國道/台線在 A 到 B 的路況/施工/事故/出口壅塞」→ route = "incidents"，filters 填上 road / direction / exit / places。\n- 問天氣/氣象 → route = "weather" 並在 filters.place 填地名。\n- 僅在明確「非台灣或與交通/氣象無關」時才使用 route = "refuse"。\n\n請輸出嚴格 JSON：\n{\n  "route": "incidents|alt_routes|scs|parking|weather|refuse|qa",\n  "filters": {...},\n  "reason": "10~30字中文簡述"\n}\n不要輸出多餘文字。\n', 'role': 'system'}, {'content': '【同義詞/別名規範】\n請將輸入中的別名映射為標準值：\n- 道路別名（例）：國一→國道1號；國道一號→國道1號；一高→國道1號；中山高→國道1號；國二→國道2號；國道二號→國道2號；機場高→國道2號；國三→國道3號\n- 區域代稱（例）：北→north；北部→north；北臺→north；北台→north；大台北→north；中→center；中部→center；中彰投→center\n- 方向別名（例）：南→南下；北→北上；東→東行；西→西行；南向→南下；北向→北上；東向→東行；西向→西行\n- 事件型別（例）：事故→accident；車禍→accident；擦撞→accident；追撞→accident；連環車禍→accident；翻覆→accident；故障→accident；故障車→accident\n- 服務區別名（例）：關西→關西服務區；清水→清水服務區；東山→東山服務區；西螺→西螺服務區；石碇→石碇服務區；新營→新營服務區；古坑→古坑服務區；仁德→仁德服務區\n輸出 filters 請直接填入標準值。', 'role': 'system'}, {'content': 'APP 能查詢國道的服務區廁所狀態嗎？', 'role': 'user'}], 'model': 'gpt-4o-mini', 'stream': False, 'temperature': 0.0}}
+2025-11-11 16:17:18,822 | DEBUG | Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2025-11-11 16:17:18,822 | DEBUG | connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=None socket_options=None
+2025-11-11 16:17:18,830 | DEBUG | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000028E5B168320>
+2025-11-11 16:17:18,830 | DEBUG | start_tls.started ssl_context=<ssl.SSLContext object at 0x0000028E7FBFD450> server_hostname='api.openai.com' timeout=None
+2025-11-11 16:17:18,838 | DEBUG | start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000028E5B179FA0>
+2025-11-11 16:17:18,838 | DEBUG | send_request_headers.started request=<Request [b'POST']>
+2025-11-11 16:17:18,838 | DEBUG | send_request_headers.complete
+2025-11-11 16:17:18,839 | DEBUG | send_request_body.started request=<Request [b'POST']>
+2025-11-11 16:17:18,839 | DEBUG | send_request_body.complete
+2025-11-11 16:17:18,839 | DEBUG | receive_response_headers.started request=<Request [b'POST']>
+2025-11-11 16:17:20,602 | DEBUG | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 11 Nov 2025 08:17:19 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'user-u4d3mn1thndgqwoe2cfaw9ct'), (b'openai-processing-ms', b'1071'), (b'openai-project', b'proj_PaO7F5ongEc153kJyEZbhXpV'), (b'openai-version', b'2020-10-01'), (b'x-envoy-upstream-service-time', b'1236'), (b'x-ratelimit-limit-requests', b'10000'), (b'x-ratelimit-limit-tokens', b'10000000'), (b'x-ratelimit-remaining-requests', b'9999'), (b'x-ratelimit-remaining-tokens', b'9999301'), (b'x-ratelimit-reset-requests', b'6ms'), (b'x-ratelimit-reset-tokens', b'4ms'), (b'x-request-id', b'req_2380c29533f04c46b4bcaa4404e46596'), (b'x-openai-proxy-wasm', b'v0.1'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=uyeqsC8vEItE.X5Dt16sLDY0_Zn6QKrX8ZlLzatH.Vc-1762849039-1.0.1.1-z.IgC3FUftfrynz.JQE0UsWndapnxVG4tPoKn2XWQpZQC5WOdblnlJqd3wvY3Z2nCeYm0WgJvhCcATo7NmUmVTXrLpMr2E_IQtL7BBN4tbQ; path=/; expires=Tue, 11-Nov-25 08:47:19 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=IE9evQ.rOBtdOPjqDijUUP5S.qZX1dJyXmYCB6A11Wg-1762849039707-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'99cc5a373b09f228-KHH'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-11-11 16:17:20,602 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-11 16:17:20,603 | DEBUG | receive_response_body.started request=<Request [b'POST']>
+2025-11-11 16:17:20,603 | DEBUG | receive_response_body.complete
+2025-11-11 16:17:20,603 | DEBUG | response_closed.started
+2025-11-11 16:17:20,603 | DEBUG | response_closed.complete
+2025-11-11 16:17:20,603 | DEBUG | HTTP Response: POST https://api.openai.com/v1/chat/completions "200 OK" Headers([('date', 'Tue, 11 Nov 2025 08:17:19 GMT'), ('content-type', 'application/json'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'user-u4d3mn1thndgqwoe2cfaw9ct'), ('openai-processing-ms', '1071'), ('openai-project', 'proj_PaO7F5ongEc153kJyEZbhXpV'), ('openai-version', '2020-10-01'), ('x-envoy-upstream-service-time', '1236'), ('x-ratelimit-limit-requests', '10000'), ('x-ratelimit-limit-tokens', '10000000'), ('x-ratelimit-remaining-requests', '9999'), ('x-ratelimit-remaining-tokens', '9999301'), ('x-ratelimit-reset-requests', '6ms'), ('x-ratelimit-reset-tokens', '4ms'), ('x-request-id', 'req_2380c29533f04c46b4bcaa4404e46596'), ('x-openai-proxy-wasm', 'v0.1'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=uyeqsC8vEItE.X5Dt16sLDY0_Zn6QKrX8ZlLzatH.Vc-1762849039-1.0.1.1-z.IgC3FUftfrynz.JQE0UsWndapnxVG4tPoKn2XWQpZQC5WOdblnlJqd3wvY3Z2nCeYm0WgJvhCcATo7NmUmVTXrLpMr2E_IQtL7BBN4tbQ; path=/; expires=Tue, 11-Nov-25 08:47:19 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=IE9evQ.rOBtdOPjqDijUUP5S.qZX1dJyXmYCB6A11Wg-1762849039707-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '99cc5a373b09f228-KHH'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-11-11 16:17:20,603 | DEBUG | request_id: req_2380c29533f04c46b4bcaa4404e46596
+2025-11-11 16:17:20,607 | DEBUG | [2aa001cb] Router 結果 route=qa conf=0.00 filters={} reason=查詢服務區廁所狀態屬於泛用諮詢
+2025-11-11 16:17:20,888 | INFO | [faq_gate] 已載入 FAQ 索引 → ./faiss_index
+2025-11-11 16:17:20,888 | DEBUG | [2aa001cb] FAQ Gate hit=True score=1.00 top_docs=0
+2025-11-11 16:17:20,888 | DEBUG | [2aa001cb] parallel_faq=False
+2025-11-11 16:17:20,888 | DEBUG | [2aa001cb] 觸發強制 QA（forced_qa）
+2025-11-11 16:17:20,889 | DEBUG | [2aa001cb] SLA remain≈2.41s
+2025-11-11 16:17:20,889 | DEBUG | [2aa001cb] 執行分支 route=qa filters={}
+2025-11-11 16:17:20,980 | DEBUG | Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'idempotency_key': 'stainless-python-retry-891ff2fa-e389-45a5-83a0-c304dc997f8e', 'post_parser': <function Embeddings.create.<locals>.parser at 0x0000028E5B152B60>, 'json_data': {'input': [[15049, 9085, 23419, 33976, 50520, 95, 12554, 233, 45893, 9554, 44309, 53508, 247, 11239, 222, 25766, 223, 32938, 163, 233, 222, 162, 227, 233, 161, 245, 236, 11571]], 'model': 'text-embedding-ada-002', 'encoding_format': 'base64'}}
+2025-11-11 16:17:20,981 | DEBUG | Sending HTTP Request: POST https://api.openai.com/v1/embeddings
+2025-11-11 16:17:20,981 | DEBUG | connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=None socket_options=None
+2025-11-11 16:17:20,986 | DEBUG | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000028E5B1955E0>
+2025-11-11 16:17:20,986 | DEBUG | start_tls.started ssl_context=<ssl.SSLContext object at 0x0000028E7F61C0D0> server_hostname='api.openai.com' timeout=None
+2025-11-11 16:17:20,995 | DEBUG | start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000028E5B195550>
+2025-11-11 16:17:20,995 | DEBUG | send_request_headers.started request=<Request [b'POST']>
+2025-11-11 16:17:20,995 | DEBUG | send_request_headers.complete
+2025-11-11 16:17:20,995 | DEBUG | send_request_body.started request=<Request [b'POST']>
+2025-11-11 16:17:20,995 | DEBUG | send_request_body.complete
+2025-11-11 16:17:20,996 | DEBUG | receive_response_headers.started request=<Request [b'POST']>
+2025-11-11 16:17:21,436 | DEBUG | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 11 Nov 2025 08:17:20 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-model', b'text-embedding-ada-002-v2'), (b'openai-organization', b'user-u4d3mn1thndgqwoe2cfaw9ct'), (b'openai-processing-ms', b'214'), (b'openai-project', b'proj_PaO7F5ongEc153kJyEZbhXpV'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'via', b'envoy-router-67f4cdcfd9-lbf7v'), (b'x-envoy-upstream-service-time', b'232'), (b'x-ratelimit-limit-requests', b'10000'), (b'x-ratelimit-limit-tokens', b'5000000'), (b'x-ratelimit-remaining-requests', b'9999'), (b'x-ratelimit-remaining-tokens', b'4999972'), (b'x-ratelimit-reset-requests', b'6ms'), (b'x-ratelimit-reset-tokens', b'0s'), (b'x-request-id', b'req_2e6303bc1c3247a996c41866af48899d'), (b'x-openai-proxy-wasm', b'v0.1'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=3_hMSUnYUplKsKpWphfdpVKC1Er.jhXi0cVU4gjOeMU-1762849040-1.0.1.1-QX1dFALdQ8Y6mF4M8gIDOtnUcka75F9sS16Q4rgkKsNKy2ZAwIXPU4mTnx5lbJwKmBdEQMMkU1lz4gltQsP.eS_r6urN9FLBLn_tYFlrhmo; path=/; expires=Tue, 11-Nov-25 08:47:20 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=8jixgYD3H0uUepEEQCt7eI2LLeY28IjAb0eRk7yqptg-1762849040543-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'99cc5a44af6af1c0-KHH'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-11-11 16:17:21,437 | INFO | HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-11 16:17:21,437 | DEBUG | receive_response_body.started request=<Request [b'POST']>
+2025-11-11 16:17:21,437 | DEBUG | receive_response_body.complete
+2025-11-11 16:17:21,437 | DEBUG | response_closed.started
+2025-11-11 16:17:21,437 | DEBUG | response_closed.complete
+2025-11-11 16:17:21,438 | DEBUG | HTTP Response: POST https://api.openai.com/v1/embeddings "200 OK" Headers([('date', 'Tue, 11 Nov 2025 08:17:20 GMT'), ('content-type', 'application/json'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-allow-origin', '*'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-model', 'text-embedding-ada-002-v2'), ('openai-organization', 'user-u4d3mn1thndgqwoe2cfaw9ct'), ('openai-processing-ms', '214'), ('openai-project', 'proj_PaO7F5ongEc153kJyEZbhXpV'), ('openai-version', '2020-10-01'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('via', 'envoy-router-67f4cdcfd9-lbf7v'), ('x-envoy-upstream-service-time', '232'), ('x-ratelimit-limit-requests', '10000'), ('x-ratelimit-limit-tokens', '5000000'), ('x-ratelimit-remaining-requests', '9999'), ('x-ratelimit-remaining-tokens', '4999972'), ('x-ratelimit-reset-requests', '6ms'), ('x-ratelimit-reset-tokens', '0s'), ('x-request-id', 'req_2e6303bc1c3247a996c41866af48899d'), ('x-openai-proxy-wasm', 'v0.1'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=3_hMSUnYUplKsKpWphfdpVKC1Er.jhXi0cVU4gjOeMU-1762849040-1.0.1.1-QX1dFALdQ8Y6mF4M8gIDOtnUcka75F9sS16Q4rgkKsNKy2ZAwIXPU4mTnx5lbJwKmBdEQMMkU1lz4gltQsP.eS_r6urN9FLBLn_tYFlrhmo; path=/; expires=Tue, 11-Nov-25 08:47:20 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=8jixgYD3H0uUepEEQCt7eI2LLeY28IjAb0eRk7yqptg-1762849040543-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '99cc5a44af6af1c0-KHH'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-11-11 16:17:21,438 | DEBUG | request_id: req_2e6303bc1c3247a996c41866af48899d
+2025-11-11 16:17:21,443 | DEBUG | Unable to import simsimd, defaulting to NumPy implementation. If you want to use simsimd please install with `pip install simsimd`.
+2025-11-11 16:17:21,443 | DEBUG | Unable to import simsimd, defaulting to NumPy implementation. If you want to use simsimd please install with `pip install simsimd`.
+2025-11-11 16:17:21,444 | DEBUG | Unable to import simsimd, defaulting to NumPy implementation. If you want to use simsimd please install with `pip install simsimd`.
+2025-11-11 16:17:21,445 | DEBUG | Unable to import simsimd, defaulting to NumPy implementation. If you want to use simsimd please install with `pip install simsimd`.
+2025-11-11 16:17:21,445 | DEBUG | Unable to import simsimd, defaulting to NumPy implementation. If you want to use simsimd please install with `pip install simsimd`.
+2025-11-11 16:17:21,447 | ERROR | [RAG] BM25 略過：ImportError: Could not import rank_bm25, please install with `pip install rank_bm25`.
+2025-11-11 16:17:21,448 | DEBUG | Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-d38e5151-336b-45e8-9371-df44f0ac14e9', 'json_data': {'messages': [{'content': '請只根據以下內容回答，回覆必須使用繁體中文。若無法在內容中直接找到答案，請簡短提供可行的查詢方向或需要補充的資訊，不要婉拒。\n【內容】\n[第8頁]\n97.APP 能查詢國道的服務區特賣活動嗎？\n可以，部分服務區會公告特賣或促銷活動。\n98.APP 能查詢國道的服務區停車場剩餘車位數嗎？\n可以，會即時顯示小型車、大型車、無障礙車位剩餘數量。\n99.APP 能查詢國道的服務區廁所狀態嗎？\n可查詢廁所位置，部分服務區顯示廁所即時使用狀態。\n100. APP能查詢國道的服務區自助洗車嗎？\n部分服務區有自助洗車會顯示。\n8\n\n[第7頁]\n可於 Google Play、App Store搜尋「高速公路 1968」或至官方網站下\n載。\n96.APP 能查詢國道的服務區飲水機嗎？\n可以，會標示飲水機設置點。\n7\n\n[第4頁]\n導航與替代路線\n41.如何查詢替代路線？\n在「替代路線」功能查詢壅塞時的建議繞道，並可連結 Google Maps 導\n航。\n42.替代路線會提供預估行車時間嗎？\n會，顯示替代路線與原路線的預估行車時間。\n43.APP 會根據壅塞自動建議繞道嗎？\n會，當前方壅塞時，APP會建議可行的替代路線。\n44.可以直接用 APP導航嗎？\n可連結 Google Maps 等導航APP進行路線導航。\n45.替代路線資訊是否即時更新？\n是，根據即時路況與事故資訊隨時調整。\n46.APP 可以查詢國道的出口到出口距離嗎？\n可以，路線規劃會顯示各出口間的距離。\n47.APP 能查詢國道的限速資訊嗎？\n\n[第2頁]\n可以，封路、管制等資訊會即時公告於 APP。\n18.APP 能查詢國道的天氣警示嗎？\n可以，會顯示大雨、濃霧、強風等天氣警示。\n19.如何查詢國道上即將到來的施工路段？\n可在「施工公告」或「即時事件」查詢未來施工計畫。\n20.APP 能顯示國道的路肩開放資訊嗎？\n可以，會標示哪些路段目前開放路肩行駛。\n事故、施工與推播\n21.如何得知前方有事故或施工？\nAPP 會顯示事故、施工、壅塞等事件，並可訂閱推播通知。\n22.什麼是「路況推播」服務？\n用戶可訂閱特定路段的事故、壅塞、施工等推播，行駛時自動提醒。\n23.推播通知會包含哪些內容？\n\n【問題】\nAPP 能查詢國道的服務區廁所狀態嗎？', 'role': 'user'}], 'model': 'gpt-4o-mini', 'stream': False, 'temperature': 0.0}}
+2025-11-11 16:17:21,449 | DEBUG | Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2025-11-11 16:17:21,449 | DEBUG | connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=None socket_options=None
+2025-11-11 16:17:21,454 | DEBUG | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000028E5B195F10>
+2025-11-11 16:17:21,454 | DEBUG | start_tls.started ssl_context=<ssl.SSLContext object at 0x0000028E7FA24750> server_hostname='api.openai.com' timeout=None
+2025-11-11 16:17:21,464 | DEBUG | start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000028E5B195D60>
+2025-11-11 16:17:21,465 | DEBUG | send_request_headers.started request=<Request [b'POST']>
+2025-11-11 16:17:21,465 | DEBUG | send_request_headers.complete
+2025-11-11 16:17:21,465 | DEBUG | send_request_body.started request=<Request [b'POST']>
+2025-11-11 16:17:21,465 | DEBUG | send_request_body.complete
+2025-11-11 16:17:21,465 | DEBUG | receive_response_headers.started request=<Request [b'POST']>
+2025-11-11 16:17:22,514 | DEBUG | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 11 Nov 2025 08:17:21 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'user-u4d3mn1thndgqwoe2cfaw9ct'), (b'openai-processing-ms', b'878'), (b'openai-project', b'proj_PaO7F5ongEc153kJyEZbhXpV'), (b'openai-version', b'2020-10-01'), (b'x-envoy-upstream-service-time', b'890'), (b'x-ratelimit-limit-requests', b'10000'), (b'x-ratelimit-limit-tokens', b'10000000'), (b'x-ratelimit-remaining-requests', b'9999'), (b'x-ratelimit-remaining-tokens', b'9999399'), (b'x-ratelimit-reset-requests', b'6ms'), (b'x-ratelimit-reset-tokens', b'3ms'), (b'x-request-id', b'req_a6b652857a96474e82a8254e29bd4798'), (b'x-openai-proxy-wasm', b'v0.1'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=bnSZ2avyybKjnhYqgMQZiwbQyo.k_RlmKIu2Wu2Ja0A-1762849041-1.0.1.1-QlwCA_idIvNvYB2btFIzk4pfa3p5OVM0FYCv9JY119AA95R4w_V6Nq.ktnhhmjEaGJL1z_bccBYhlWZ0OkSEiknUv6hn28pe07jVHRdkVWo; path=/; expires=Tue, 11-Nov-25 08:47:21 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=ahr6kXJc1UIbyolfV6B3lJ3IcZAkRLTYgRNHI1wgKLA-1762849041619-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'99cc5a479a8af1c0-KHH'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-11-11 16:17:22,514 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-11 16:17:22,515 | DEBUG | receive_response_body.started request=<Request [b'POST']>
+2025-11-11 16:17:22,516 | DEBUG | receive_response_body.complete
+2025-11-11 16:17:22,516 | DEBUG | response_closed.started
+2025-11-11 16:17:22,516 | DEBUG | response_closed.complete
+2025-11-11 16:17:22,517 | DEBUG | HTTP Response: POST https://api.openai.com/v1/chat/completions "200 OK" Headers([('date', 'Tue, 11 Nov 2025 08:17:21 GMT'), ('content-type', 'application/json'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'user-u4d3mn1thndgqwoe2cfaw9ct'), ('openai-processing-ms', '878'), ('openai-project', 'proj_PaO7F5ongEc153kJyEZbhXpV'), ('openai-version', '2020-10-01'), ('x-envoy-upstream-service-time', '890'), ('x-ratelimit-limit-requests', '10000'), ('x-ratelimit-limit-tokens', '10000000'), ('x-ratelimit-remaining-requests', '9999'), ('x-ratelimit-remaining-tokens', '9999399'), ('x-ratelimit-reset-requests', '6ms'), ('x-ratelimit-reset-tokens', '3ms'), ('x-request-id', 'req_a6b652857a96474e82a8254e29bd4798'), ('x-openai-proxy-wasm', 'v0.1'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=bnSZ2avyybKjnhYqgMQZiwbQyo.k_RlmKIu2Wu2Ja0A-1762849041-1.0.1.1-QlwCA_idIvNvYB2btFIzk4pfa3p5OVM0FYCv9JY119AA95R4w_V6Nq.ktnhhmjEaGJL1z_bccBYhlWZ0OkSEiknUv6hn28pe07jVHRdkVWo; path=/; expires=Tue, 11-Nov-25 08:47:21 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=ahr6kXJc1UIbyolfV6B3lJ3IcZAkRLTYgRNHI1wgKLA-1762849041619-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '99cc5a479a8af1c0-KHH'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-11-11 16:17:22,517 | DEBUG | request_id: req_a6b652857a96474e82a8254e29bd4798
+2025-11-11 16:17:22,517 | DEBUG | [2aa001cb] 跳過寫DB（未配置）
+2025-11-11 16:17:22,518 | INFO | [2aa001cb] 完成 in 4019 ms | route=qa conf=0.00 | sources=[{'rag': 'general'}]
+2025-11-11 16:34:01,097 | INFO | [c073f9db] === 新請求 ===
+2025-11-11 16:34:01,097 | INFO | [c073f9db] 問題: APP 能查詢國道的服務區廁所狀態嗎？
+2025-11-11 16:34:01,097 | INFO | [c073f9db] 來源: ip=127.0.0.1 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+2025-11-11 16:34:03,200 | INFO | [faq_gate] 已載入 FAQ 索引 → ./faiss_index
+2025-11-11 16:34:04,492 | WARNING | [RAG] BM25 略過：ImportError: Could not import rank_bm25, please install with `pip install rank_bm25`.
+2025-11-11 16:34:07,784 | INFO | [c073f9db] 完成 in 6687 ms | route=qa conf=0.00 | sources=[{'qa': 'free'}]
+2025-11-11 16:35:31,615 | INFO | Loading faiss with AVX2 support.
+2025-11-11 16:35:31,629 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-11 16:35:31,632 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-11 16:37:25,194 | INFO | Loading faiss with AVX2 support.
+2025-11-11 16:37:25,210 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-11 16:37:25,214 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-11 16:37:28,848 | INFO | [86f2471c] === 新請求 ===
+2025-11-11 16:37:28,849 | INFO | [86f2471c] 問題: APP 能查詢國道的服務區廁所狀態嗎？
+2025-11-11 16:37:28,849 | INFO | [86f2471c] 來源: ip=127.0.0.1 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+2025-11-11 16:37:30,694 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-11 16:37:31,010 | INFO | [faq_gate] 已載入 FAQ 索引 → ./faiss_index
+2025-11-11 16:37:31,493 | INFO | HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-11 16:37:31,502 | ERROR | [RAG] BM25 略過：ImportError: Could not import rank_bm25, please install with `pip install rank_bm25`.
+2025-11-11 16:37:32,565 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-11 16:37:32,566 | INFO | [86f2471c] 完成 in 3717 ms | route=qa conf=0.00 | sources=[{'rag': 'general'}]
+2025-11-11 16:40:25,610 | INFO | [94dd2f86] === 新請求 ===
+2025-11-11 16:40:25,610 | INFO | [94dd2f86] 問題: 如何查詢國道的高乘載管制時段？
+2025-11-11 16:40:25,610 | INFO | [94dd2f86] 來源: ip=127.0.0.1 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+2025-11-11 16:40:26,847 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-11 16:40:27,397 | INFO | HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-11 16:40:30,333 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-11 16:40:30,335 | INFO | [94dd2f86] 完成 in 4725 ms | route=faq conf=0.00 | sources=[{'doc': '1968_QA.pdf', 'page': 3}, {'doc': '1968_QA.pdf', 'page': 6}, {'doc': '1968_QA.pdf', 'page': 2}, {'doc': '1968_QA.pdf', 'page': 7}, {'doc': '1968_QA.pdf', 'page': 6}]
+2025-11-11 16:41:33,961 | INFO | [b0e2dcb7] === 新請求 ===
+2025-11-11 16:41:33,962 | INFO | [b0e2dcb7] 問題: 國1南下林口到桃園有沒有事故？
+2025-11-11 16:41:33,962 | INFO | [b0e2dcb7] 來源: ip=127.0.0.1 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+2025-11-11 16:41:36,897 | INFO | HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-11 16:41:37,076 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-11 16:41:37,084 | INFO | [b0e2dcb7] 完成 in 3123 ms | route=incidents conf=0.00 | sources=[{'api': 'incidents', 'ts': 1762850497.0845978}]
+2025-11-11 16:42:03,573 | INFO | [c6986809] === 新請求 ===
+2025-11-11 16:42:03,574 | INFO | [c6986809] 問題: 台74線西行現在路況如何？
+2025-11-11 16:42:03,574 | INFO | [c6986809] 來源: ip=127.0.0.1 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+2025-11-11 16:42:05,320 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-11 16:42:05,586 | INFO | HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-11 16:42:05,646 | INFO | [c6986809] 完成 in 2073 ms | route=incidents conf=0.50 | sources=[{'api': 'incidents', 'ts': 1762850525.64631}]
+2025-11-11 16:42:49,563 | INFO | [cb5a72b1] === 新請求 ===
+2025-11-11 16:42:49,565 | INFO | [cb5a72b1] 問題: 現在國道3號有開放路肩嗎？
+2025-11-11 16:42:49,565 | INFO | [cb5a72b1] 來源: ip=127.0.0.1 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+2025-11-11 16:42:50,805 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-11 16:42:51,262 | INFO | HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-11 16:42:53,643 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-11 16:42:53,644 | INFO | [cb5a72b1] 完成 in 4081 ms | route=faq conf=0.00 | sources=[{'doc': '1968_QA.pdf', 'page': 2}, {'doc': '1968_QA.pdf', 'page': 4}, {'doc': '1968_QA.pdf', 'page': 2}, {'doc': '1968_QA.pdf', 'page': 5}, {'doc': '1968_QA.pdf', 'page': 6}]
+2025-11-11 16:43:21,559 | INFO | [f9fa21f4] === 新請求 ===
+2025-11-11 16:43:21,559 | INFO | [f9fa21f4] 問題: 關西服務區還有沒有停車位？
+2025-11-11 16:43:21,559 | INFO | [f9fa21f4] 來源: ip=127.0.0.1 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+2025-11-11 16:43:23,680 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-11 16:43:24,600 | INFO | HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-11 16:43:25,476 | INFO | [f9fa21f4] 完成 in 3917 ms | route=parking conf=0.00 | sources=[{'api': 'parking', 'ts': 1762850605.476884, 'kw': '關西服務區還服務區'}]
+2025-11-11 16:43:51,799 | INFO | [751644b9] === 新請求 ===
+2025-11-11 16:43:51,800 | INFO | [751644b9] 問題: 台中現在天氣如何？
+2025-11-11 16:43:51,800 | INFO | [751644b9] 來源: ip=127.0.0.1 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+2025-11-11 16:43:53,294 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-11 16:43:53,639 | INFO | HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-11 16:43:56,490 | INFO | [751644b9] 完成 in 4690 ms | route=weather conf=0.00 | sources=[{'api': 'open-meteo', 'lat': 24.1121054, 'lon': 120.6158968, 'ts': 1762850636.490196}]
+2025-11-11 16:44:06,873 | INFO | [e698a6bd] === 新請求 ===
+2025-11-11 16:44:06,873 | INFO | [e698a6bd] 問題: 幫我寫一首情詩
+2025-11-11 16:44:06,874 | INFO | [e698a6bd] 來源: ip=127.0.0.1 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+2025-11-11 16:44:07,611 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-11 16:44:07,900 | INFO | HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-11 16:44:10,147 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-11 16:44:10,150 | INFO | [e698a6bd] 完成 in 3275 ms | route=faq conf=0.00 | sources=[{'doc': '1968_QA.pdf', 'page': 5}, {'doc': '1968_QA.pdf', 'page': 5}, {'doc': '1968_QA.pdf', 'page': 3}, {'doc': '1968_QA.pdf', 'page': 6}, {'doc': '1968_QA.pdf', 'page': 2}]
+2025-11-11 17:09:30,486 | INFO | Loading faiss with AVX2 support.
+2025-11-11 17:09:30,500 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-11 17:09:30,503 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-11 17:09:34,116 | INFO | [4fa73c06] === 新請求 ===
+2025-11-11 17:09:34,116 | INFO | [4fa73c06] 問題: 台74線西行現在路況如何？
+2025-11-11 17:09:34,116 | INFO | [4fa73c06] 來源: ip=127.0.0.1 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+2025-11-11 17:09:36,984 | INFO | [faq_gate] 已載入 FAQ 索引 → ./faiss_index
+2025-11-11 17:09:37,521 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-11 17:09:37,659 | INFO | HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-11 17:09:37,735 | INFO | [4fa73c06] 完成 in 3619 ms | route=incidents conf=0.00 | sources=[{'api': 'incidents', 'ts': 1762852177.7353776}]
+2025-11-11 17:09:47,510 | INFO | [20d6ba91] === 新請求 ===
+2025-11-11 17:09:47,510 | INFO | [20d6ba91] 問題: 關西服務區還有沒有停車位？
+2025-11-11 17:09:47,510 | INFO | [20d6ba91] 來源: ip=127.0.0.1 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+2025-11-11 17:09:49,554 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-11 17:09:49,993 | INFO | HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-11 17:09:50,056 | INFO | [20d6ba91] 完成 in 2546 ms | route=parking conf=0.00 | sources=[{'api': 'parking', 'ts': 1762852190.0568192, 'kw': '關西服務區'}]
+2025-11-13 14:16:07,951 | INFO | Loading faiss with AVX2 support.
+2025-11-13 14:16:07,997 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-13 14:16:08,000 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-13 14:16:40,312 | INFO | [ba3824e9] === 新請求 ===
+2025-11-13 14:16:40,312 | INFO | [ba3824e9] 問題: 如何設定自訂路線進行預測？
+2025-11-13 14:16:40,312 | INFO | [ba3824e9] 來源: ip=127.0.0.1 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+2025-11-13 14:16:40,604 | INFO | [faq_gate] FAQ 索引載入 → ./faiss_index
+2025-11-13 14:16:43,688 | INFO | HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-13 14:16:45,563 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 14:16:45,570 | INFO | [ba3824e9] 完成 in 5257 ms | route=faq conf=0.00 | sources=[{'doc': '1968_QA.pdf', 'page': 2}, {'doc': '1968_QA.pdf', 'page': 1}, {'doc': '1968_QA.pdf', 'page': 4}, {'doc': '1968_QA.pdf', 'page': 2}, {'doc': '1968_QA.pdf', 'page': 2}]
+2025-11-13 14:33:35,748 | INFO | [5b2fb882] === 新請求 ===
+2025-11-13 14:33:35,748 | INFO | [5b2fb882] 問題: 如何設定自訂路線進行預測？
+2025-11-13 14:33:35,748 | INFO | [5b2fb882] 來源: ip=127.0.0.1 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+2025-11-13 14:33:36,616 | INFO | HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-13 14:33:38,596 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 14:33:38,605 | INFO | [5b2fb882] 完成 in 2857 ms | route=faq conf=0.00 | sources=[{'doc': '1968_QA.pdf', 'page': 2}, {'doc': '1968_QA.pdf', 'page': 1}, {'doc': '1968_QA.pdf', 'page': 4}, {'doc': '1968_QA.pdf', 'page': 2}, {'doc': '1968_QA.pdf', 'page': 2}]
+2025-11-13 14:38:04,793 | INFO | Loading faiss with AVX2 support.
+2025-11-13 14:38:04,806 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-13 14:38:04,809 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-13 14:38:23,078 | INFO | Loading faiss with AVX2 support.
+2025-11-13 14:38:23,097 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-13 14:38:23,101 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-13 14:38:30,175 | INFO | [b435aa88] === 新請求 ===
+2025-11-13 14:38:30,176 | INFO | [b435aa88] 問題: 如何設定自訂路線進行預測？
+2025-11-13 14:38:30,176 | INFO | [b435aa88] 來源: ip=127.0.0.1 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+2025-11-13 14:38:30,484 | INFO | [faq_gate] FAQ 索引載入 → ./faiss_index
+2025-11-13 14:38:31,437 | INFO | HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-13 14:38:33,014 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 14:38:33,018 | INFO | [b435aa88] 完成 in 2843 ms | route=faq conf=0.00 | sources=[{'doc': '1968_QA.pdf', 'page': 2}, {'doc': '1968_QA.pdf', 'page': 1}, {'doc': '1968_QA.pdf', 'page': 4}, {'doc': '1968_QA.pdf', 'page': 2}, {'doc': '1968_QA.pdf', 'page': 2}]
+2025-11-13 14:40:20,805 | INFO | Loading faiss with AVX2 support.
+2025-11-13 14:40:20,819 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-13 14:40:20,822 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-13 14:40:23,284 | INFO | Loading faiss with AVX2 support.
+2025-11-13 14:40:23,296 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-13 14:40:23,299 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-13 14:40:26,103 | INFO | [798dd042] === 新請求 ===
+2025-11-13 14:40:26,103 | INFO | [798dd042] 問題: 如何設定自訂路線進行預測？
+2025-11-13 14:40:26,103 | INFO | [798dd042] 來源: ip=127.0.0.1 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+2025-11-13 14:40:26,406 | INFO | [faq_gate] FAQ 索引載入 → ./faiss_index
+2025-11-13 14:40:26,973 | INFO | HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-13 14:40:29,464 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 14:40:29,471 | INFO | [798dd042] 完成 in 3368 ms | route=faq conf=0.00 | sources=[{'doc': '1968_QA.pdf', 'page': 2}, {'doc': '1968_QA.pdf', 'page': 1}, {'doc': '1968_QA.pdf', 'page': 4}, {'doc': '1968_QA.pdf', 'page': 2}, {'doc': '1968_QA.pdf', 'page': 2}]
+2025-11-13 14:44:39,638 | INFO | Loading faiss with AVX2 support.
+2025-11-13 14:44:39,669 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-13 14:44:39,681 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-13 14:44:41,864 | INFO | [6f1ce178] === 新請求 ===
+2025-11-13 14:44:41,865 | INFO | [6f1ce178] 問題: 如何設定自訂路線進行預測？
+2025-11-13 14:44:41,865 | INFO | [6f1ce178] 來源: ip=127.0.0.1 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+2025-11-13 14:44:42,269 | INFO | [faq_gate] FAQ 索引載入 → ./faiss_index
+2025-11-13 14:44:42,976 | INFO | HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-13 14:44:44,365 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 14:44:44,371 | INFO | [6f1ce178] 完成 in 2507 ms | route=faq conf=0.00 | sources=[{'doc': '1968_QA.pdf', 'page': 2}, {'doc': '1968_QA.pdf', 'page': 1}, {'doc': '1968_QA.pdf', 'page': 4}, {'doc': '1968_QA.pdf', 'page': 2}, {'doc': '1968_QA.pdf', 'page': 2}]
+2025-11-13 15:49:25,661 | INFO | Loading faiss with AVX2 support.
+2025-11-13 15:49:25,674 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-13 15:49:25,678 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-13 15:49:51,450 | INFO | [7ada0bf1] === 新請求 ===
+2025-11-13 15:49:51,451 | INFO | [7ada0bf1] 問題: 如何查詢特定路段的即時影像？
+2025-11-13 15:49:51,453 | INFO | [7ada0bf1] 來源: ip=127.0.0.1 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+2025-11-13 15:49:54,071 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 15:49:54,931 | INFO | [faq_gate] FAQ 索引載入 → ./faiss_index
+2025-11-13 15:49:56,079 | INFO | HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-13 15:49:56,269 | ERROR | [7ada0bf1] 全域逾時（SLA=5.0s）
+2025-11-13 15:49:58,194 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 15:50:12,399 | INFO | [af015aff] === 新請求 ===
+2025-11-13 15:50:12,399 | INFO | [af015aff] 問題: 如何查詢特定路段的即時影像？
+2025-11-13 15:50:12,399 | INFO | [af015aff] 來源: ip=127.0.0.1 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+2025-11-13 15:50:13,339 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 15:50:13,896 | INFO | HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-13 15:50:15,967 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 15:50:15,969 | INFO | [af015aff] 完成 in 3570 ms | route=qa conf=0.00 | sources=[{'doc': '1968_QA.pdf', 'page': 2}, {'doc': '1968_QA.pdf', 'page': 1}, {'doc': '1968_QA.pdf', 'page': 1}, {'doc': '1968_QA.pdf', 'page': 6}, {'doc': '1968_QA.pdf', 'page': 4}]
+2025-11-13 15:50:24,378 | INFO | [2ffbcad3] === 新請求 ===
+2025-11-13 15:50:24,379 | INFO | [2ffbcad3] 問題: 關西服務區停車位
+2025-11-13 15:50:24,379 | INFO | [2ffbcad3] 來源: ip=127.0.0.1 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+2025-11-13 15:50:26,236 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 15:50:27,154 | INFO | [2ffbcad3] 完成 in 2776 ms | route=parking conf=0.00 | sources=[{'api': 'parking', 'ts': 1763020227.1542592, 'kw': '關西服務區'}]
+2025-11-13 15:51:04,964 | INFO | [314192a4] === 新請求 ===
+2025-11-13 15:51:04,965 | INFO | [314192a4] 問題: 台中往南的國一壅塞嚴重嗎？
+2025-11-13 15:51:04,965 | INFO | [314192a4] 來源: ip=127.0.0.1 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+2025-11-13 15:51:07,649 | INFO | [314192a4] 完成 in 2684 ms | route=incidents conf=0.00 | sources=[{'api': 'incidents', 'ts': 1763020267.6493602}]
+2025-11-13 15:51:07,690 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 15:57:29,787 | INFO | Loading faiss with AVX2 support.
+2025-11-13 15:57:29,801 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-13 15:57:29,804 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-13 15:57:55,246 | INFO | Loading faiss with AVX2 support.
+2025-11-13 15:57:55,258 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-13 15:57:55,261 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-13 16:01:55,936 | INFO | Loading faiss with AVX2 support.
+2025-11-13 16:01:55,952 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-13 16:01:55,955 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-13 16:02:16,460 | INFO | Loading faiss with AVX2 support.
+2025-11-13 16:02:16,474 | INFO | Successfully loaded faiss with AVX2 support.
+2025-11-13 16:02:16,477 | INFO | Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-13 16:02:23,072 | INFO | [3c4f1775] === 新請求 ===
+2025-11-13 16:02:23,073 | INFO | [3c4f1775] 問題: 台中往南的國一壅塞嚴重嗎？
+2025-11-13 16:02:23,073 | INFO | [3c4f1775] 來源: ip=127.0.0.1 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+2025-11-13 16:02:25,651 | INFO | [3c4f1775] 完成 in 2578 ms | route=incidents conf=0.00 | sources=[{'api': 'incidents', 'ts': 1763020945.6518912}]
+2025-11-13 16:02:26,419 | INFO | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

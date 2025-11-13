@@ -1,7 +1,8 @@
 # D:\github\1968_SMART_CHAT_BACK\process_pdf.py
 import os
+import uuid
+import traceback
 from dotenv import load_dotenv, find_dotenv
-# 先載 .env（override=False：保留環境上既有設定）
 load_dotenv(find_dotenv(filename=".env", usecwd=True), override=False)
 
 import uvicorn
@@ -9,21 +10,23 @@ from fastapi import FastAPI, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import json, logging, asyncio, time, re
-from datetime import datetime
 from functools import lru_cache
 import requests
+from datetime import datetime, timezone, timedelta
 
-# === LangChain / OpenAI（向量檢索 + 直接 LLM） ===
-from langchain_openai.chat_models import ChatOpenAI
-from langchain_openai.embeddings import OpenAIEmbeddings
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+# === LangChain / OpenAI（新版匯入路徑） ===
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
-from langchain.schema import Document, SystemMessage, HumanMessage
+from langchain_core.documents import Document
+from langchain_core.messages import SystemMessage, HumanMessage
 
 # === DB ===
 import pymysql
 
 # === 路由 / 服務 ===
+from core.faq_gate import faq_gate
+from services.faq_service import answer_from_docs
 from core.intent_router import route_question
 from core.geocoding import geocode
 from core.config import SLA_SEC
@@ -31,6 +34,7 @@ from services.incidents_service import query_incidents_by_filters
 from services.alt_routes_service import summarize_alt_routes
 from services.shoulder_service import summarize_scs
 from services.parking_service import summarize_parking
+
 
 # === Prompts / 標題（不使用 QA_PREFIX，避免出現 📘 前綴） ===
 from prompts.all_zh import (
@@ -53,9 +57,15 @@ app.add_middleware(
     expose_headers=["X-Route","X-Filters","X-Reason","X-Forced-QA","X-Fallback","X-Timings-ms"],
 )
 
+LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO").upper()
+
 logging.basicConfig(
-    filename="service.log", level=logging.INFO,
-    format="%(asctime)s - %(message)s", encoding="utf-8"
+    level=getattr(logging, LOG_LEVEL, logging.INFO),
+    format="%(asctime)s | %(levelname)s | %(message)s",
+    handlers=[
+        logging.FileHandler("service.log", encoding="utf-8"),
+        logging.StreamHandler()  # ← 這行會把 log 同步印到 console
+    ]
 )
 
 # =============================================================================
@@ -99,10 +109,34 @@ RAG_PROMPT_NEUTRAL = (
 )
 
 def rag_answer(question: str) -> str:
-    """自取向量庫內容 + 中立 prompt 丟給 LLM。"""
     try:
-        docs = retriever.get_relevant_documents(question) or []
-        context = "\n\n".join([d.page_content for d in docs]) if docs else ""
+        # dense（FAISS）
+        try:
+            # 新版 retriever 用 invoke；不支援就回退舊法
+            docs_dense = retriever.invoke(question) if hasattr(retriever, "invoke") else retriever.get_relevant_documents(question)
+        except Exception:
+            docs_dense = []
+        faiss_docs = (docs_dense or [])[:4]
+
+        # sparse（BM25 可選）
+        bm25_docs = []
+        try:
+            from langchain_community.retrievers import BM25Retriever
+            bm25 = BM25Retriever.from_texts([d.page_content for d in vector_store.docstore._dict.values()])
+            bm25.k = 4
+            bm25_docs = bm25.get_relevant_documents(question)
+        except Exception as e:
+            logging.error(f"[RAG] BM25 略過：{type(e).__name__}: {e}")
+
+        # union + 去重
+        seen, docs = set(), []
+        for arr in (faiss_docs, bm25_docs):
+            for d in arr:
+                key = (d.metadata.get("page"), d.page_content[:64])
+                if key not in seen:
+                    seen.add(key); docs.append(d)
+
+        context = "\n\n".join([f"[第{d.metadata.get('page')}頁]\n{d.page_content}" for d in docs[:6]])
         prompt_text = RAG_PROMPT_NEUTRAL.format(context=context, question=question)
         resp = rag_llm.invoke([HumanMessage(content=prompt_text)])
         return (resp.content or "").strip()
@@ -116,19 +150,26 @@ _UNHELPFUL_PAT = re.compile(
     r"請.*使用.*APP|建議.*查詢|請.*至.*官方網站|僅供參考)",
     re.I
 )
+
 def _rag_is_unhelpful(ans: str) -> bool:
-    if not ans or len(ans.strip()) < 30:
+    if not ans:
         return True
-    return bool(_UNHELPFUL_PAT.search(ans))
+    s = ans.strip()
+    # ★ 放寬：短句但不含打槍詞，就當作有幫助（FAQ 常見）
+    if len(s) < 50 and not _UNHELPFUL_PAT.search(s):
+        return False
+    return bool(_UNHELPFUL_PAT.search(s))
 
 def qa_free_answer(question: str) -> str:
-    """沒有 API 的一般問答（例如最近交流道/休息站/服務區設施）。"""
     msgs = [
         SystemMessage(content=(
             "你是台灣高速公路/交通資訊助理。"
             "對於『最近的交流道』『附近的休息站』『服務區有哪些設施』等沒有即時 API 的問題，"
             "請用常識與地理知識給出可行建議或查詢步驟，並告知需要的補充資訊（如國道號、方向、里程、服務區名稱）。"
             "回覆使用繁體中文、簡潔扼要；不確定的資訊需標示為建議或需查證。"
+            "若判斷問題與台灣交通/氣象無關，請回覆："
+            "「我主要協助台灣的交通/氣象查詢（國道路況、替代道路、服務區、天氣）。"
+            "若問題不在這些範圍，可能無法完整回答；也歡迎告訴我要查的路段/交流道或地點，我會直接幫你查。」"
         )),
         HumanMessage(content=question[:1000])
     ]
@@ -164,13 +205,24 @@ def openmeteo_current(lat, lon):
     except Exception:
         return {}
 
+def _iso_ts_taipei() -> str:
+    tz = timezone(timedelta(hours=8))
+    s = datetime.now(tz).strftime("%Y-%m-%dT%H:%M%z")  # e.g., 2025-11-12T16:18+0800
+    return f"{s[:-2]}:{s[-2:]}"  # → 2025-11-12T16:18+08:00
+
 def add_disclaimer(ans: str) -> str:
-    if not ans:
+    """在答案最後加上 Disclaimer（純文字，不含時間、不含 HTML 標籤）"""
+    base = (ans or "").rstrip()
+
+    # 如果本來字串裡就已經有 disclaimer 就不要重複加
+    if ANSWER_DISCLAIMER in base:
+        return base
+
+    # 和主內容用換行隔開
+    if base:
+        return f"{base}\n{ANSWER_DISCLAIMER}"
+    else:
         return ANSWER_DISCLAIMER
-    if ANSWER_DISCLAIMER in ans:
-        return ans
-    sep = "\n" if ans.endswith(("。", "！", "!", "？」", "？")) else "\n\n"
-    return f"{ans}{sep}{ANSWER_DISCLAIMER}"
 
 # —— 只顯示台灣縣市名稱用的工具 ——
 _TW_CITY_LIST = [
@@ -225,15 +277,31 @@ def _should_force_qa(q: str, route: str, filters: dict) -> bool:
 # 後置保險路由（關鍵字極簡補救：保證 parking / incidents / weather 能命中）
 # =============================================================================
 _ROAD_PAT = re.compile(
-    r"(中山高|北二高|二高|"
+    r"(中山高|北二高|二高|一高|三高|北宜高|"
     r"國道?\s*[0-9０-９一二三四五六七八九十]+號?|"
     r"國?\s*[0-9０-９一二三四五六七八九十]|"
     r"台?\s*[0-9０-９一二三四五六七八九十]+線|"
     r"省道?\s*[0-9０-９一二三四五六七八九十]+號)",
     re.I
 )
-_DIR_PAT  = re.compile(r"(南下|北上|東行|西行|順向|逆向)")
-_PARKING_PAT = re.compile(r"(?P<name>[\u4e00-\u9fa5]{2,6})(?:服務區)?(?:.*?)(車位|停車|停車位|空位|剩餘|可用)")
+
+_DIR_PAT  = re.compile(
+    r"(南下|北上|東行|西行|順向|逆向|往南|往北|往東|往西|南向|北向|東向|西向)"
+)
+
+_PARKING_PAT = re.compile(
+    r"(?P<name>[\u4e00-\u9fa5]{2,8}?)(?:服務區)?"
+    r"(?:的|目前|現在|還|是否|有沒有|有無|查|看)?"
+    r"(?:.*?)(?:車位|停車|停車位|停車場|空位|剩餘|可用)",
+    re.I
+)
+
+def _sanitize_sa_name(name: str) -> str:
+    if not name:
+        return ""
+    n = re.sub(r"(服務區)?(的|目前|現在|還|是否|有沒有|有無)$", "", name.strip())
+    n = n.replace("服務區", "")
+    return n
 
 # 將全形、中文數字轉成可辨識的國道/台線字串
 def _normalize_digits(s: str) -> str:
@@ -241,29 +309,42 @@ def _normalize_digits(s: str) -> str:
     s = s.translate(str.maketrans("０１２３４５６７８９", "0123456789"))
     # 中文數字（常用到 1~10）
     s = (s.replace("一", "1").replace("二", "2").replace("三", "3")
-           .replace("四","4").replace("五","5").replace("六","6")
-           .replace("七","7").replace("八","8").replace("九","9")
-           .replace("十","10"))
+           .replace("四", "4").replace("五", "5").replace("六", "6")
+           .replace("七", "7").replace("八", "8").replace("九", "9")
+           .replace("十", "10"))
     return s
 
 def _normalize_road_name(expr: str) -> str:
     x = _normalize_digits(expr.replace(" ", ""))
     x = x.replace("臺", "台")
+
+    # 先把可能黏在一起的方向字尾去掉（例：國一南下 → 國一）
+    x = re.sub(r"(南下|北上|東行|西行|南向|北向|東向|西向|往南|往北|往東|往西)$", "", x)
+
     # 別名映射
     if "中山高" in x:
         return "國道1號"
     if "北二高" in x or x == "二高":
         return "國道3號"
-    # 統一常見縮寫：國1→國道1號、國3→國道3號
+    if "一高" in x:
+        return "國道1號"
+    if "三高" in x:
+        return "國道3號"
+    if "北宜高" in x:
+        return "國道5號"
+
+    # 統一常見縮寫：國1→國道1號、國3→國道3號（中文數字已轉成阿拉伯數字）
     m = re.search(r"^國?道?(\d{1,2})號?$", x)
     if m:
         return f"國道{m.group(1)}號"
+
     # 台線/省道保持原樣（ex：台74線）
     m2 = re.search(r"^(台|省道)(\d{1,3})(號|線)?$", x)
     if m2:
         prefix = "台" if m2.group(1).startswith("台") else "省道"
         suf = "線" if (m2.group(3) or "") == "線" else "號"
         return f"{prefix}{m2.group(2)}{suf}"
+
     return expr  # 萬一抓不準，就原樣回傳
 
 def _fallback_route(q: str, route: str, filters: dict):
@@ -271,36 +352,89 @@ def _fallback_route(q: str, route: str, filters: dict):
 
     # parking：命中「OO服務區 + 車位/停車/空位…」→ 直接導到 parking
     m = _PARKING_PAT.search(x)
-    if route not in ("parking",) and m:
-        name = (m.group("name") or "").strip()
-        if name:
-            pname = name if name.endswith("服務區") else (name + "服務區")
-            return "parking", {"parking_name": pname}, "fallback_parking"
+    if m:
+        raw = (m.group("name") or "").strip()
+        base = _sanitize_sa_name(raw)
+        if base:
+            pname = base + "服務區"
+            new_filters = dict(filters or {})
+            new_filters.setdefault("parking_name", pname)
+            # 若原本 route 不是 parking，就強制改成 parking
+            if route != "parking":
+                return "parking", new_filters, "fallback_parking"
+            else:
+                return route, new_filters, "fallback_parking_enhance"
 
-    # weather：看到「天氣/氣象」→ 導 weather，地點就用整句（下游會 geocode）
-    if route not in ("weather",) and ("天氣" in x or "氣象" in x):
+    # weather：看到「天氣/氣象」→ 導 weather
+    if ("天氣" in x or "氣象" in x):
         place = re.sub(r"(現在|目前|的|天氣|氣象|如何|狀況|\?|？)", "", x).strip() or x
-        return "weather", {"place": place}, "fallback_weather"
+        new_filters = dict(filters or {})
+        new_filters.setdefault("place", place)
+        if route != "weather":
+            return "weather", new_filters, "fallback_weather"
+        else:
+            return route, new_filters, "fallback_weather_enhance"
 
-    # incidents：同時看見道路與路況關鍵詞 → 導 incidents 並補 road/type/direction
-        # incidents：同時看見道路與路況關鍵詞 → 導 incidents 並補 road/type/direction
-    if route not in ("incidents",) and _ROAD_PAT.search(x) and re.search(r"(路況|施工|事故|封閉|壅塞|回堵)", x):
+    # incidents：道路 + 路況關鍵詞 → 導 incidents 並補 road/type/direction
+    if _ROAD_PAT.search(x) and re.search(r"(路況|施工|事故|封閉|壅塞|回堵)", x):
         raw = _ROAD_PAT.search(x).group(1)
-        road = _normalize_road_name(raw)  # ★ 改這行：統一路名
-        itype = None
-        if "施工" in x or "養護" in x or "封閉" in x:
-            itype = "construction"
-        elif "事故" in x or "車禍" in x or "擦撞" in x or "追撞" in x or "翻覆" in x:
-            itype = "accident"
-        elif "壅塞" in x or "回堵" in x or "出口" in x or "交流道" in x:
-            itype = "exit_congestion"
-        dire = _DIR_PAT.search(x).group(1) if _DIR_PAT.search(x) else None
-        f = {"road": road}
-        if itype: f["type"] = itype
-        if dire:  f["direction"] = dire
-        return "incidents", f, "fallback_incidents"
+        road = _normalize_road_name(raw)
 
+        # 類型判斷
+        itype = None
+        if any(k in x for k in ["施工", "養護", "封閉"]):
+            itype = "construction"
+        elif any(k in x for k in ["事故", "車禍", "擦撞", "追撞", "翻覆"]):
+            itype = "accident"
+        elif any(k in x for k in ["壅塞", "回堵", "出口", "交流道"]):
+            itype = "exit_congestion"
+
+        # 方向判斷：把「往南 / 南向」都規一成「南下」之類
+        dire = None
+        mdir = _DIR_PAT.search(x)
+        if mdir:
+            raw_dir = mdir.group(1)
+            if raw_dir in ("南下", "往南", "南向"):
+                dire = "南下"
+            elif raw_dir in ("北上", "往北", "北向"):
+                dire = "北上"
+            elif raw_dir in ("東行", "往東", "東向"):
+                dire = "東行"
+            elif raw_dir in ("西行", "往西", "西向"):
+                dire = "西行"
+            elif raw_dir in ("順向", "逆向"):
+                dire = raw_dir
+
+        new_filters = dict(filters or {})
+        new_filters.setdefault("road", road)
+        if itype and "type" not in new_filters:
+            new_filters["type"] = itype
+        if dire and "direction" not in new_filters:
+            new_filters["direction"] = dire
+
+        # 如果原本不是 incidents → 強制導到 incidents
+        if route != "incidents":
+            return "incidents", new_filters, "fallback_incidents"
+        else:
+            # 原本就是 incidents，只是幫忙補 road/direction/type
+            return "incidents", new_filters, "fallback_incidents_enhance"
+
+    # 沒命中任何保險規則 → 不動
     return route, filters, ""
+
+def _db_ready(cfg: dict) -> bool:
+    return all([
+        cfg.get("host", "").strip() not in ("", "..."),
+        cfg.get("user", "").strip() not in ("", "..."),
+        cfg.get("password", "").strip() not in ("", "..."),
+        cfg.get("database", "").strip() not in ("", "...")
+    ])
+
+def _latin1_safe(s: str, placeholder: str = "?") -> str:
+    try:
+        return (s or "").encode("latin-1", "replace").decode("latin-1")
+    except Exception:
+        return placeholder
 
 # =============================================================================
 # API
@@ -314,143 +448,208 @@ async def root():
 
 @app.post("/chatback/query/")
 async def query_pdf(input: QueryInput, request: Request, response: Response):
+    req_id = uuid.uuid4().hex[:8]  # ★ Request Trace ID
     q = (input.question or "").strip()
     user_ip = request.client.host
     user_agent = request.headers.get("user-agent", "未知")
 
-    logging.info("=" * 50)
-    logging.info(f"問題：{q}")
-    logging.info(f"IP：{user_ip}")
-    logging.info(f"裝置：{user_agent}")
+    def ms_since(t0):  # 小工具：回傳經過毫秒
+        return int((time.perf_counter() - t0) * 1000)
+
+    t0 = time.perf_counter()
+    # logging.info(f"[{req_id}] === 新請求 ===")
+    # logging.info(f"[{req_id}] 問題: {q}")
+    # logging.info(f"[{req_id}] 來源: ip={user_ip} ua={user_agent}")
 
     answer = ""
-    t0 = time.perf_counter()
     route = "incidents"
-    filters = {}
+    filters: dict = {}
     reason = ""
     forced_qa = False
     fallback_reason = ""
+    sources_used = []
+    confidence = 0.0
 
     try:
-        # 1) 唯一路由：LLM
+        # 1) 唯一路由：LLM（先判斷要走哪種 API / QA）
         route, filters, reason = await route_question(q)
+        confidence = float(filters.pop("_confidence", 0)) if "_confidence" in filters else 0.0
+        logging.debug(f"[{req_id}] Router 結果 route={route} conf={confidence:.2f} filters={filters} reason={reason}")
 
-        # 1.1) 強制 QA（最近交流道/休息站/服務區設施等）
+        # 1.1) 強制 QA（最近交流道/休息站/服務區設施等）：
+        #      → 只有這種“沒有即時 API”的問題才改成 QA
         if _should_force_qa(q, route, filters):
+            logging.debug(f"[{req_id}] 觸發強制 QA（forced_qa）")
             route, filters, reason = "qa", {}, f"{reason}|forced_qa"
             forced_qa = True
 
-        # 1.2) 後置保險路由（確保 parking / incidents / weather 能命中）
+        # 1.2) 後置保險路由（parking / incidents / weather 補救）
         route, filters, fb = _fallback_route(q, route, filters)
         if fb:
+            logging.debug(f"[{req_id}] 後置保險路由觸發：{fb} → 新 route={route}, filters={filters}")
             fallback_reason = fb
 
-        # 2) 依 route 執行；以 SLA 限時守門
-        async def _do():
-            nonlocal answer, route, filters
+        # 2) 執行主流程（以 SLA 限時）
+        async def _do_main_route():
+            nonlocal answer, route, filters, sources_used
+            logging.debug(f"[{req_id}] 執行分支 route={route} filters={filters}")
 
-            # 若不啟用硬性婉拒，將 refuse 改走 QA（避免硬拒）
-            if (route == "refuse") and (not REFUSAL_ENABLED):
-                route = "qa"
-                filters = {}
+            try:
+                # 不允許硬拒絕 → 全部改走 QA/RAG
+                if (route == "refuse") and (not REFUSAL_ENABLED):
+                    logging.debug(f"[{req_id}] route=refuse 且 REFUSAL_DISABLED → 改走 qa")
+                    route = "qa"
+                    filters = {}
 
-            if route == "incidents":
-                res = await asyncio.get_running_loop().run_in_executor(
-                    None, lambda: query_incidents_by_filters(filters, limit=5)
-                )
-                summary = (res or {}).get("summary") or "目前查無符合條件的事件。"
-                answer = add_disclaimer(f"{INCIDENTS_PREFIX}\n{summary}")
-
-            elif route == "alt_routes":
-                summary = await asyncio.get_running_loop().run_in_executor(None, summarize_alt_routes)
-                answer = add_disclaimer(f"{ALT_ROUTES_PREFIX}\n{summary}")
-
-            elif route == "scs":
-                summary = await asyncio.get_running_loop().run_in_executor(None, summarize_scs)
-                answer = add_disclaimer(f"{SCS_PREFIX}\n{summary}")
-
-            elif route == "parking":
-                kw = (filters.get("parking_name") or "").strip()
-                if not kw:
-                    answer = add_disclaimer("請提供要查詢的服務區名稱（例如：關西服務區）。")
+                # ========= 這裡開始：各種 API 優先 =========
+                if route == "incidents":
+                    res = await asyncio.get_running_loop().run_in_executor(
+                        None, lambda: query_incidents_by_filters(filters, limit=5)
+                    )
+                    summary = (res or {}).get("summary") or "目前查無符合條件的事件。"
+                    answer = add_disclaimer(f"{INCIDENTS_PREFIX}\n{summary}")
+                    sources_used = [{"api": "incidents", "ts": time.time()}]
                     return
-                summary = await asyncio.get_running_loop().run_in_executor(
-                    None, lambda: summarize_parking(keyword=kw, limit=8)
-                )
-                answer = add_disclaimer(f"{PARKING_PREFIX}\n{summary}")
 
-            elif route == "weather":
-                place = (filters.get("place") or "").strip()
-                if not place:
-                    place = q
-                coord = await asyncio.get_running_loop().run_in_executor(None, geocode, place)
-                if coord:
-                    lat, lon, label, _ = coord
-                    display_name = _only_city_name(label, place)  # ★ 只取縣市名
-                    weather = await asyncio.get_running_loop().run_in_executor(None, openmeteo_current, lat, lon)
-                    if weather:
-                        ans = f"「{display_name}」目前：{weather.get('temp_c','—')}°C、降雨 {weather.get('rain_mm',0)} mm、風速 {weather.get('wind_ms','—')} m/s"
+                elif route == "alt_routes":
+                    summary = await asyncio.get_running_loop().run_in_executor(None, summarize_alt_routes)
+                    answer = add_disclaimer(f"{ALT_ROUTES_PREFIX}\n{summary}")
+                    sources_used = [{"api": "alt_routes", "ts": time.time()}]
+                    return
+
+                elif route == "scs":
+                    summary = await asyncio.get_running_loop().run_in_executor(None, summarize_scs)
+                    answer = add_disclaimer(f"{SCS_PREFIX}\n{summary}")
+                    sources_used = [{"api": "scs", "ts": time.time()}]
+                    return
+
+                elif route == "parking":
+                    # ★ 服務區停車位：一定優先走 API
+                    kw = (filters.get("parking_name") or "").strip()
+                    if not kw:
+                        answer = add_disclaimer("請提供要查詢的服務區名稱（例如：關西服務區）。")
+                        sources_used = []
+                        return
+                    summary = await asyncio.get_running_loop().run_in_executor(
+                        None, lambda: summarize_parking(keyword=kw, limit=8)
+                    )
+                    answer = add_disclaimer(f"{PARKING_PREFIX}\n{summary}")
+                    sources_used = [{"api": "parking", "ts": time.time(), "kw": kw}]
+                    return
+
+                elif route == "weather":
+                    # 天氣 → Open-Meteo API（不是 PDF）
+                    place = (filters.get("place") or "").strip() or q
+                    coord = await asyncio.get_running_loop().run_in_executor(None, geocode, place)
+                    if coord:
+                        lat, lon, label, _ = coord
+                        display_name = _only_city_name(label, place)
+                        weather = await asyncio.get_running_loop().run_in_executor(None, openmeteo_current, lat, lon)
+                        if weather:
+                            ans = (
+                                f"「{display_name}」目前："
+                                f"{weather.get('temp_c', '—')}°C、"
+                                f"降雨 {weather.get('rain_mm', 0)} mm、"
+                                f"風速 {weather.get('wind_ms', '—')} m/s"
+                            )
+                        else:
+                            ans = "目前無法取得該地即時天氣。"
+                        answer = add_disclaimer(f"{WEATHER_PREFIX}{ans}")
+                        sources_used = [{"api": "open-meteo", "lat": lat, "lon": lon, "ts": time.time()}]
                     else:
-                        ans = "目前無法取得該地即時天氣。"
-                    answer = add_disclaimer(f"{WEATHER_PREFIX}{ans}")
-                else:
-                    answer = add_disclaimer("無法辨識天氣查詢地點，請提供更明確的地名或地址。")
+                        answer = add_disclaimer("無法辨識天氣查詢地點，請提供更明確的地名或地址。")
+                        sources_used = []
+                    return
 
-            elif route == "qa":
-                # 先試 RAG（PDF / 系統 QA）
-                rag_ans = rag_answer(q)
-                # RAG 有料且不是打槍/無幫助 → 用 RAG；否則 → free QA
-                if rag_ans and not _rag_is_unhelpful(rag_ans):
-                    answer = add_disclaimer(rag_ans.strip())
-                else:
-                    free = qa_free_answer(q)
-                    if free:
-                        answer = add_disclaimer(free)
+                # ========= QA 類：這裡才會用到 PDF / RAG =========
+                elif route == "qa":
+                    # 2.1) 先查 1968_QA.pdf（FAQ）；只在 QA 類問題時才啟用
+                    hit, hit_score, top_docs = faq_gate(q)
+                    logging.debug(f"[{req_id}] FAQ Gate (QA) hit={hit} score={hit_score:.2f} top_docs={len(top_docs)}")
+
+                    if hit:
+                        # PDF 優先於 RAG/自由 QA
+                        if top_docs:
+                            pack = await asyncio.get_running_loop().run_in_executor(None, answer_from_docs, q, top_docs)
+                            answer = add_disclaimer(pack["text"])
+                            sources_used = pack.get("sources", [])
+                        else:
+                            # 僅規則命中時的保守答覆，可視情況調整
+                            answer_text = "可於 1968 APP 的「管制措施」或首頁公告查詢相關資訊。"
+                            answer = add_disclaimer(answer_text)
+                            sources_used = [{"faq": "rule"}]
+                        return
+
+                    # 2.2) FAQ 沒中 → 再走 RAG + 自由 QA
+                    rag_ans = rag_answer(q)
+                    if rag_ans and not _rag_is_unhelpful(rag_ans):
+                        answer = add_disclaimer(rag_ans.strip())
+                        sources_used = [{"rag": "general"}]
                     else:
-                        answer = add_disclaimer(
-                            "目前無法直接從資料中查到精準答案；"
-                            "你可以補充國道號、方向與里程或服務區名稱，我再幫你查。"
-                        )
+                        free = qa_free_answer(q)
+                        if free:
+                            answer = add_disclaimer(free)
+                            sources_used = [{"qa": "free"}]
+                        else:
+                            answer = add_disclaimer(
+                                "目前無法直接從資料中查到精準答案；"
+                                "你可以補充國道號、方向與里程或服務區名稱，我再幫你查。"
+                            )
+                            sources_used = []
+                    return
 
-            else:  # refuse（只有在 REFUSAL_ENABLED=true 時才可能走到）
-                # 先試 RAG（中立提示），若無幫助則用軟性說法
-                rag_ans = rag_answer(q)
-                if rag_ans and not _rag_is_unhelpful(rag_ans):
-                    answer = add_disclaimer(rag_ans.strip())
                 else:
-                    answer = add_disclaimer(SOFT_REFUSAL)
+                    # 其它不預期的 route：保險 → RAG + 軟性說明
+                    rag_ans = rag_answer(q)
+                    if rag_ans and not _rag_is_unhelpful(rag_ans):
+                        answer = add_disclaimer(rag_ans.strip())
+                        sources_used = [{"rag": "refuse"}]
+                    else:
+                        answer = add_disclaimer(SOFT_REFUSAL)
+                        sources_used = []
+                    return
 
-        # SLA 守門（預留 200ms 緩衝）
+            except Exception:
+                logging.error(f"[{req_id}] 分支執行錯誤 route={route}\n{traceback.format_exc()}")
+                raise
+
         remain = max(0.1, SLA_SEC - (time.perf_counter() - t0) - 0.2)
-        await asyncio.wait_for(_do(), timeout=remain)
+        logging.debug(f"[{req_id}] SLA remain≈{remain:.2f}s")
 
-        # 若極端情況仍是空字串，補一個友善訊息（避免前端出現「找不到答案」）
+        # 這裡不再做 parallel_faq，單純跑主路由邏輯
+        await asyncio.wait_for(_do_main_route(), timeout=remain)
+
+        # === API / QA 流程跑完，都會到這裡來 ===
         if not answer:
+            logging.warning(f"[{req_id}] 無答案→回軟性說明")
             answer = add_disclaimer(SOFT_REFUSAL)
 
         # 3) 寫 DB（不中斷）
         try:
             DB_CONFIG = {
-                "host": os.getenv("DB_HOST"),
-                "user": os.getenv("DB_USER"),
-                "password": os.getenv("DB_PASSWORD"),
-                "database": os.getenv("DB_NAME"),
+                "host": os.getenv("DB_HOST", "").strip(),
+                "user": os.getenv("DB_USER", "").strip(),
+                "password": os.getenv("DB_PASSWORD", "").strip(),
+                "database": os.getenv("DB_NAME", "").strip(),
                 "port": int(os.getenv("DB_PORT", 3306)),
                 "charset": "utf8mb4"
             }
-            if DB_CONFIG["host"]:
+            if _db_ready(DB_CONFIG):
                 conn = pymysql.connect(**DB_CONFIG)
                 with conn.cursor() as cursor:
                     sql = "INSERT INTO chat_history (ip_address, device_info, sender, message, created_at) VALUES (%s,%s,%s,%s,%s)"
                     now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
                     cursor.execute(sql, (user_ip, user_agent, "user", q[:1000], now))
                     cursor.execute(sql, (user_ip, user_agent, "bot", (answer[:1000] if answer else "[NO_ANSWER]"), now))
-                conn.commit(); conn.close()
-        except Exception as db_err:
-            logging.error(f"[❌] 寫入資料庫失敗：{db_err}")
+                conn.commit()
+                conn.close()
+            else:
+                logging.debug(f"[{req_id}] 跳過寫DB（未配置）")
+        except Exception:
+            logging.error(f"[{req_id}] 寫 DB 失敗\n{traceback.format_exc()}")
 
         # ===== 回傳除錯資訊（F12 可見）=====
-        timings_ms = int((time.perf_counter() - t0) * 1000)
+        timings_ms = ms_since(t0)
         debug = {
             "route": route,
             "filters": filters,
@@ -458,35 +657,54 @@ async def query_pdf(input: QueryInput, request: Request, response: Response):
             "forced_qa": forced_qa,
             "fallback": fallback_reason,
             "timings_ms": timings_ms,
+            "confidence": round(confidence, 2),
+            "sources": sources_used,
+            "req_id": req_id,
         }
-        logging.info(f"[router] {json.dumps(debug, ensure_ascii=False)}")
+        # logging.info(f"[{req_id}] 完成 in {timings_ms} ms | route={route} conf={confidence:.2f} | sources={sources_used}")
 
-        # 設定可在 F12→Network 的 Response Headers 直接看到
+        # Response Headers（含 Trace ID）
         try:
-            response.headers["X-Route"] = route
-            response.headers["X-Filters"] = json.dumps(filters, ensure_ascii=False)
-            response.headers["X-Reason"] = reason
+            response.headers["X-Route"] = _latin1_safe(route)
+            response.headers["X-Filters"] = _latin1_safe(json.dumps(filters, ensure_ascii=False))
+            response.headers["X-Reason"] = _latin1_safe(reason)
             response.headers["X-Forced-QA"] = "true" if forced_qa else "false"
-            response.headers["X-Fallback"] = fallback_reason or ""
+            response.headers["X-Fallback"] = _latin1_safe(fallback_reason or "")
             response.headers["X-Timings-ms"] = str(timings_ms)
+            response.headers["X-Confidence"] = f"{confidence:.2f}"
+            response.headers["X-Trace-Id"] = req_id
         except Exception:
-            pass
+            logging.error(f"[{req_id}] 設定回應標頭失敗\n{traceback.format_exc()}")
 
-        return {
-            "answer": answer,
-            "route": route,
-            "filters": filters,
-            "reason": reason,
-            "debug": debug
-        }
+        return {"answer": answer, "route": route, "filters": filters, "reason": reason, "debug": debug}
 
     except asyncio.TimeoutError:
-        return {"answer": add_disclaimer("系統繁忙，請稍後再試。"),
-                "debug": {"error": "timeout"}}
-    except Exception as e:
-        logging.error(f"查詢錯誤：{e}")
-        return {"answer": add_disclaimer("查詢失敗，請稍後再試。"),
-                "debug": {"error": str(e)}}
+        logging.error(f"[{req_id}] 全域逾時（SLA={SLA_SEC}s）")
+        return {
+            "answer": add_disclaimer("系統繁忙，請稍後再試。"),
+            "debug": {"error": "timeout", "req_id": req_id}
+        }
+    except Exception:
+        logging.error(f"[{req_id}] 全域例外\n{traceback.format_exc()}")
+        return {
+            "answer": add_disclaimer("查詢失敗，請稍後再試。"),
+            "debug": {"error": "exception", "req_id": req_id}
+        }
+
+@app.get("/health")
+def health():
+    import time
+    ok_key = bool(os.getenv("OPENAI_API_KEY", "").strip())
+    key_mask = (os.getenv("OPENAI_API_KEY","").strip()[:7] + "…") if ok_key else ""
+    faq_idx = os.path.exists(os.path.join(os.getenv("FAQ_INDEX_DIR", os.path.join("faiss_index","faq_1968")), "index.faiss"))
+    faq_json = os.path.exists(os.getenv("FAQ_JSON_PATH", os.path.join("PDF","1968_QA.json")))
+    return {
+        "time": time.strftime("%Y-%m-%d %H:%M:%S"),
+        "openai_key_present": ok_key,
+        "openai_key_mask": key_mask,
+        "faq_index_exists": faq_idx,
+        "faq_json_exists": faq_json
+    }
 
 # =============================================================================
 # 啟動

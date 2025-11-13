@@ -145,18 +145,22 @@ def _fmt(it: Incident) -> str:
 # -----------------------------
 def _relax_filters_and_search(pool: List[Incident], cond_in: Dict[str, Any]) -> Tuple[List[Incident], Dict[str, Any], List[str]]:
     """
-    依序移除條件：exit → places → direction → road → region，直到有資料或全移除。
-    回傳 (hits, 使用的條件, 放寬了哪些鍵列表)
+    放寬順序改為：region → places → exit → direction → road
+    但若使用者原本有指定 road 或 direction，預設**不放寬**（除非全空才逐步放寬）。
     """
-    order = ["exit", "places", "direction", "road", "region"]
-
     # 先試原始條件
     hits = filter_incidents(pool, cond_in)
     _rank(hits)
     if hits:
         return hits, cond_in, []
 
-    # 逐步放寬
+    # 放寬順序（region 最先放，避免跨區資料影響；最後才 road）
+    order = ["region", "places", "exit", "direction", "road"]
+
+    # 若原本就有 road 或 direction，標記為「鎖定」
+    lock_road = bool(cond_in.get("road"))
+    lock_dir  = bool(cond_in.get("direction"))
+
     for i in range(len(order)):
         cond = {
             "itype": cond_in.get("itype"),
@@ -166,18 +170,32 @@ def _relax_filters_and_search(pool: List[Incident], cond_in: Dict[str, Any]) -> 
             "exit": cond_in.get("exit"),
             "places": list(cond_in.get("places") or []),
         }
+        relaxed_keys = []
         for j in range(i + 1):
             key = order[j]
+            # road/direction 鎖住時，不放寬
+            if key == "road" and lock_road:
+                continue
+            if key == "direction" and lock_dir:
+                continue
+
             if key == "places":
                 cond["places"] = []
-            else:
-                cond[key] = None
+            elif key == "region":
+                cond["region"] = None
+            elif key == "exit":
+                cond["exit"] = None
+            elif key == "direction":
+                cond["direction"] = None
+            elif key == "road":
+                cond["road"] = None
+            relaxed_keys.append(key)
+
         hits = filter_incidents(pool, cond)
         _rank(hits)
         if hits:
-            return hits, cond, order[:i+1]
+            return hits, cond, relaxed_keys
 
-    # 全放寬也沒有
     return [], cond_in, order
 
 # -----------------------------
@@ -192,6 +210,8 @@ def query_incidents_by_filters(filters: Dict[str, Any], limit: int = 5):
         "exit":      (filters.get("exit") or "").strip() or None,
         "places":    filters.get("places") or [],
     }
+    # 使用者原始指定的方向（用來鎖死方向）
+    orig_direction = cond["direction"]
 
     try:
         pool = fetch_region(cond["region"]) if cond["region"] else fetch_all_regions()
@@ -211,9 +231,22 @@ def query_incidents_by_filters(filters: Dict[str, Any], limit: int = 5):
 
     hits, used_cond, relaxed_keys = _relax_filters_and_search(pool, cond)
 
+    # === 方向強制鎖死邏輯 ===
+    if orig_direction:
+        # 確保回傳的 conditions 一定保留使用者指定方向
+        used_cond = dict(used_cond or {})
+        used_cond["direction"] = orig_direction
+
+        # 只保留「方向完全相同」的事件
+        hits = [
+            h for h in hits
+            if (getattr(h, "direction", "") or "").strip() == orig_direction
+        ]
+
+    # 方向過濾後若沒有任何事件 → 當成查無資料（不要回反方向）
     if not hits:
         return {
-            "conditions": used_cond,
+            "conditions": used_cond if orig_direction else cond,
             "count": 0,
             "items": [],
             "summary": "目前查無符合條件的事件。可再提供更明確的里程、交流道或方向。",
@@ -221,15 +254,20 @@ def query_incidents_by_filters(filters: Dict[str, Any], limit: int = 5):
             "ask": ["是否有更精確的里程或交流道？"]
         }
 
+    # 建立「已放寬」提示，但如果有指定方向，就不要說方向被放寬
     prefix = ""
     if relaxed_keys:
-        zh = {"exit":"出口","places":"地名","direction":"方向","road":"道路","region":"區域"}
-        keys_txt = "、".join(zh[k] for k in relaxed_keys if k in zh)
-        prefix = f"（已放寬：{keys_txt}）\n"
+        zh = {"exit": "出口", "places": "地名", "direction": "方向", "road": "道路", "region": "區域"}
+        keys_txt = "、".join(
+            zh[k] for k in relaxed_keys
+            if k in zh and not (k == "direction" and orig_direction)
+        )
+        if keys_txt:
+            prefix = f"（已放寬：{keys_txt}）\n"
 
     summary = prefix + "\n".join(_fmt(x) for x in hits[:limit])
     return {
-        "conditions": used_cond,
+        "conditions": used_cond if orig_direction else used_cond,
         "count": len(hits),
         "items": hits[:limit],
         "summary": summary,
